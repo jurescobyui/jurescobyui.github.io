@@ -48,6 +48,9 @@ footer {
 
 @media (max-width:853px){
     h1{ font-size: 2.5rem;}
+    header img {
+        width:200px;
+    }
  }
 
  @media (max-width:695px){
@@ -58,7 +61,7 @@ footer {
 @media (max-width:619px){
     header img { 
          width:150px;
-         float:right;
+         //float:right;
      }
  }
 
