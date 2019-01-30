@@ -43,8 +43,4 @@
     transform: translateX(-100%); 
     }
    }
-   @media (min-width:480px){
-       img { 
-           width:100px;
-       }
-   }
+   
