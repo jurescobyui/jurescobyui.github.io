@@ -55,6 +55,7 @@ footer {
 
  @media (max-width:695px){
     h1{ font-size: 2rem;}
+    h2{ font-size: 1.5rem;}
  }
 
 
@@ -63,12 +64,31 @@ footer {
          width:150px;
          //float:right;
      }
+     h1{
+         font-size: 1.5rem;
+     }
+     h2{
+         font-size: 1.2rem;
+     }
+ }
+
+ @media (max-width:500px){
+    header img { 
+         width:150px;
+         //float:right;
+     }
+     h1{
+         font-size: 1.5rem;
+     }
+     h2{
+         font-size: 1rem;
+     }
  }
 
  @media (max-width:480px){
     header img { 
          width:100px;
-         float:left;
+         float:right;
      }
     
      header{
@@ -79,9 +99,11 @@ footer {
     }
     h2{
         font-size: 1rem;
-        float:right;
+        float:left;
+       
         margin-top:-100px;
-        padding-right:50px;
+        margin-left:80px;
+        
     }
  }
 
