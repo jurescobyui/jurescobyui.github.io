@@ -107,7 +107,7 @@ footer {
     }
  }
 
- @media (max-width:347px){
+ @media (max-width:360px){
     header img { 
          width:100px;
          float:left;
