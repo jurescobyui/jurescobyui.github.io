@@ -20,6 +20,7 @@ h2 {
     font-size: 2rem /* x.xrem */;
     text-align: center;
     //border-bottom: 1px solid #bbb;
+    width:100%;
 }
 
 header, main, footer {
@@ -28,7 +29,8 @@ header, main, footer {
     max-width: 1000px /* xxxpx (px = pixel is a unit of measure)  */;
 }
 main {
-    border-top: thin solid gray;
+  //  border-top: thin solid gray;
+  width:100%;
 }
 header, footer, footer a {
     text-align: center;
@@ -73,6 +75,9 @@ footer {
  }
 
  @media (max-width:500px){
+     header{
+        // height: 150px;
+     }
     header img { 
          width:150px;
          //float:right;
@@ -89,10 +94,11 @@ footer {
     header img { 
          width:100px;
          float:right;
+         
      }
     
      header{
-         height:115px;
+        // height:115px;
      }
      h1{
         font-size: 1.5rem;
@@ -100,9 +106,6 @@ footer {
     h2{
         font-size: 1rem;
         float:left;
-       
-        margin-top:-100px;
-        margin-left:80px;
         
     }
  }
@@ -111,10 +114,11 @@ footer {
     header img { 
          width:100px;
          float:left;
+         
      }
     
      header{
-         height:115px;
+       //  height:115px;
      }
      h1{
         font-size: 1rem;
@@ -124,5 +128,8 @@ footer {
         margin:0;
         padding:0;
         float:none;
+    }
+    ul li  {
+        font-size: .8rem;
     }
  }
