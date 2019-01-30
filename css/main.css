@@ -19,7 +19,7 @@ h1 {
 h2 {
     font-size: 2rem /* x.xrem */;
     text-align: center;
-    border-bottom: 1px solid #bbb;
+    //border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
@@ -27,7 +27,9 @@ header, main, footer {
     padding: .5rem;
     max-width: 1000px /* xxxpx (px = pixel is a unit of measure)  */;
 }
-
+main {
+    border-top: thin solid gray;
+}
 header, footer, footer a {
     text-align: center;
     background-color: blue /* */;
@@ -43,8 +45,59 @@ header img {
 footer {
     font-size: .8rem/* smaller */;
 }
-@media (min-width:480px){
-    img { 
-        width:100px;
+
+@media (max-width:853px){
+    h1{ font-size: 2.5rem;}
+ }
+
+ @media (max-width:695px){
+    h1{ font-size: 2rem;}
+ }
+
+
+@media (max-width:619px){
+    header img { 
+         width:150px;
+         float:right;
+     }
+ }
+
+ @media (max-width:480px){
+    header img { 
+         width:100px;
+         float:left;
+     }
+    
+     header{
+         height:115px;
+     }
+     h1{
+        font-size: 1.5rem;
     }
-}
+    h2{
+        font-size: 1rem;
+        float:right;
+        margin-top:-100px;
+        padding-right:50px;
+    }
+ }
+
+ @media (max-width:347px){
+    header img { 
+         width:100px;
+         float:left;
+     }
+    
+     header{
+         height:115px;
+     }
+     h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: .8rem;
+        margin:0;
+        padding:0;
+        float:none;
+    }
+ }
