@@ -113,7 +113,7 @@ footer {
  @media (max-width:360px){
     header img { 
          width:100%;
-         float:left;  
+         //float:left;  
      }
     
      h1{
