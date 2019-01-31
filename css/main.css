@@ -48,6 +48,7 @@ footer {
     font-size: .8rem/* smaller */;
 }
 /* begin different sizes of screens*/
+
 @media (max-width:853px){
     h1{ font-size: 2.5rem;}
     header img {
