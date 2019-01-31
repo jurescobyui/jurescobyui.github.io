@@ -1,39 +1,3 @@
-<?php
-if(isset($_POST['submit'])){
-    //get recipient email
-   if(isset($_POST['emailto'])){
-    $to="<".$_POST['emailto'].">";
-   }else{
-       $to="juresco@gmail.com";
-   }
-   // get subject
-   if(isset($_POST['subject'])){
-       $subject=htmlspecialchars($_POST['subject']);
-   }else{
-       $subject="No Subject";
-   }
-   // get message
-   if(isset($_POST['message'])){
-       $txt=htmlspecialchars($_POST['message']);
-   }else{
-       $txt="No Message entered...";
-   }
-    
-   /// mail
-        //$to = "<glenesco@gmail.com>";
-        //$subject = "test 9 email from localhost";
-        //$txt = "This is is a content of simple mailer in local host using xampp";
-    $headers = "From: <juresco@pytchit.com>" . "\r\n" . "CC: <juresco@pytchit.com>";
-    if(mail($to,$subject,$txt,$headers)){
-       echo "<script>alert('Sent mail!'); </script>";
-    }else{
-        echo "Mail not sent... pls check mail settings";
-    }
-}
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
