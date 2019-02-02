@@ -23,29 +23,34 @@ header{
     border-bottom: solid thin lightgreen;
 }
 #logo img {
-    width:22%;
+    width:25%;
     margin:2px;
     float:left;
    // border: solid thin cyan;
 }
 #site-name{
+    margin:0;
      font-family: 'Roboto Slab', serif;
     font-size:1.5em;
     font-weight: bold;
     padding-left:7%;
+    padding-right:5px;
     float:right;
    // border: solid thin violet;
 }
 .motto{
-    font-size:.75rem;
+    margin:0;
+    font-size:.7rem;
     font-style: italic;
-    
-    display:inline-block;
-   float:right; */
+    //display:inline-block;
+    float:right;
+}
+.motto p{
+    text-align:center;
 }
 .site-name1{
     font-family: 'Roboto Slab', serif;
-color:#4B4B4B;
+    color:#4B4B4B;
 }
 .site-name2{
     font-family: 'Roboto Slab', serif;
@@ -95,11 +100,11 @@ nav {
 }
 article{
     text-align:justify;
-    padding:1px;
+    padding:3px;
     border: dashed thin lightgray;
 }
 article p{
-    margin:0;
+    margin:2px;
     padding:5px;
 }
 .btn-light{
