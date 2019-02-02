@@ -98,6 +98,10 @@ nav {
     color: darkgreen;
     background-color:#B0E0A1;
 }
+.active{
+    color: darkgreen;
+    background-color:#60ADCB;
+}
 article{
     text-align:justify;
     padding:3px;
