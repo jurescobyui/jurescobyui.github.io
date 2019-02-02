@@ -1,0 +1,116 @@
+/*weather site css */
+.container {
+    max-width:360px;
+    min-width:360px;
+    margin: 0 auto;
+    padding:2px;
+  // border: solid thin lightgray;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B4B4B;
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    text-align:center;
+    background-color: #F2F2F2;
+}
+header{
+border-bottom: solid thin lightgreen;
+}
+#logo img {
+    width:22%;
+    margin:2px;
+    float:left;
+   // border: solid thin cyan;
+}
+#site-name{
+     font-family: 'Roboto Slab', serif;
+    font-size:1.5em;
+    font-weight: bold;
+    padding-left:7%;
+    float:right;
+   // border: solid thin violet;
+}
+.motto{
+    font-size:.75rem;
+    font-style: italic;
+    
+    display:inline-block;
+   float:right; */
+}
+.site-name1{
+    font-family: 'Roboto Slab', serif;
+color:#4B4B4B;
+}
+.site-name2{
+    font-family: 'Roboto Slab', serif;
+   color:#83D16B;
+}
+.clear{
+    clear:both;
+}
+.responsive-img{
+    width:100%;
+}
+nav {
+   /* display:block;
+    width:100%;
+    border:solid thin brown;
+    margin:0;
+    padding:0;
+    */
+}
+ ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   // border:solid thin gray;
+    
+}
+ ul li{
+   
+    display:inline-block;
+    width:100%;
+   
+  }
+ ul li a{
+    display:block;
+    text-decoration: none;
+    text-align:center;
+    padding: 15px 0;
+   // border:solid thin yellow;
+   
+ }
+ 
+
+
+ ul li a:hover{
+    color: darkgreen;
+    background-color:#B0E0A1;
+}
+article{
+    text-align:justify;
+    padding:1px;
+    border: dashed thin lightgray;
+}
+article p{
+    margin:0;
+    padding:5px;
+}
+
+footer{
+    
+    padding:1px;
+    text-align:center;
+}
+.small{
+    font-size:.9em;
+}
+.copyright{
+    padding:2px;
+    background-color: #F2F2F2;
+}
