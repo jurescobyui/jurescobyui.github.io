@@ -19,7 +19,8 @@ h1,h2,h3,h4,h5,h6{
     background-color: #F2F2F2;
 }
 header{
-border-bottom: solid thin lightgreen;
+    padding:3px;
+    border-bottom: solid thin lightgreen;
 }
 #logo img {
     width:22%;
