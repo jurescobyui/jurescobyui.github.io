@@ -39,6 +39,7 @@
         padding-right:5px;
         float:right;
     // border: solid thin violet;
+    text-shadow: 2px 2px 2px #888888;
     }
     .motto{
         margin:0;
@@ -53,6 +54,7 @@
     .site-name1{
         font-family: 'Roboto Slab', serif;
         color:#4B4B4B;
+        
     }
     .site-name2{
         font-family: 'Roboto Slab', serif;
@@ -123,11 +125,12 @@
         top:10px;
         left:10px;
         padding:5px;
-        border: solid thin magenta;
+        //border: solid thin magenta;
         width:250px;
         background-color: #83D16B;
         opacity: 0.8;
         filter: alpha(opacity=80); 
+        box-shadow: 5px 5px 18px #034e3b;
     }
     article{
         text-align:justify;
@@ -179,11 +182,15 @@
         filter: alpha(opacity=80); */
     }
     caption{
-        font-weight: bold;
+            padding:3px;
+            font-weight: bold;
+            color:black;
+            border-bottom:solid 2px white;
 
     }
     tr,td{
         padding:5px;
+        font-weight: bold;
         color:yellow;
     }
     td.first-col{
