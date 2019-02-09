@@ -208,6 +208,9 @@
         text-decoration: none;
         color:#4B4B4B !important;
     }
+    .days-forecast{
+        display:none;
+    }
       
     
 /*}*/

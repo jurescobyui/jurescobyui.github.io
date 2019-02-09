@@ -15,7 +15,9 @@
      padding:0;
  }
  h1,h2,h3,h4,h5,h6{
-     margin:0;
+     
+     margin-top:10px;
+     margin-bottom:10px;
      padding-top:5px;
      padding-bottom:5px;
      text-align:center;
@@ -133,6 +135,9 @@
      filter: alpha(opacity=80); 
      box-shadow: 5px 10px 18px #888888;
  }
+ .days-forecast{
+    display:none;
+}
  article{
      text-align:justify;
      padding:3px;
@@ -444,6 +449,13 @@
     }
     .left{
         float:left;
+    }
+    .img-center{
+        width:40%;
+        margin:0 auto;
+    }
+    .days-forecast{
+        display:block;
     }
 }
 @media screen and (min-width:849px){
