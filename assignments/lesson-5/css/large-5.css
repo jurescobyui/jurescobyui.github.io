@@ -6,6 +6,7 @@
      margin: 0 auto;
      padding:2px;
  // border: solid thin lightgray;
+   // background-color:maroon;
  }
  body{
      font-family: Arial, Helvetica, sans-serif;
@@ -107,8 +108,13 @@
      background-color:#60ADCB;
  }
  .hero-page{
+    background: url("../images/hero-image-s.jpg") no-repeat;
+    height:100%;
+     background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
      position:relative;
-     //height:350px;
+     height:350px;
     
  }
  .hero-overlay{
@@ -116,7 +122,7 @@
      top:10px;
      left:10px;
      border: solid thin magenta;
-     width:50%;
+     width:60%;
      background-color: #83D16B;
      opacity: 0.8;
      filter: alpha(opacity=80); 
@@ -269,9 +275,19 @@
         float:right;
         margin:5px;
     }
+    .hero-page{
+    background: url("../images/hero-image-s.jpg") no-repeat;
+    height:100%;
+     background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height:300px;
+    }
 }
 @media screen and (min-width:749px){
-   
+   header{
+       position:relative;
+   }
     #logo img {
         width:150px;
         margin:2px;
@@ -357,9 +373,17 @@
     }
     
     .hero-page{
+      background: url("../images/hero-image-ml.jpg") no-repeat;
+        height:100%;
+         background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+       height:300px;
         overflow:hidden;
     }
-
+    .hero-image{
+        margin-top:-100px;
+    }
     .article-image{
         width:300px;
         float:right;
@@ -374,5 +398,10 @@
         list-style: none;
         text-decoration: none;
         color:#4B4B4B !important;
+    }
+}
+@media screen and (min-width:849px){
+    #currentcondition{
+        width:250px;
     }
 }

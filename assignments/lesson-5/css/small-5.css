@@ -1,11 +1,12 @@
 /*weather site css */
-@media screen and (max-width:360px){
+/*@media screen and (max-width:360px){*/
     .container {
-        max-width:1000px;
+        max-width:360px;
         min-width:360px;
         margin: 0 auto;
         padding:2px;
     // border: solid thin lightgray;
+   // background-color:khaki;
     }
     body{
         font-family: Arial, Helvetica, sans-serif;
@@ -107,6 +108,12 @@
         background-color:#60ADCB;
     }
     .hero-page{
+        background: url("../images/hero-image-s.jpg") no-repeat;
+        height:100%;
+         background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+
         position:relative;
         height:250px;
         overflow:hidden;
@@ -115,8 +122,9 @@
         position:absolute;
         top:10px;
         left:10px;
+        padding:5px;
         border: solid thin magenta;
-        width:230px;
+        width:250px;
         background-color: #83D16B;
         opacity: 0.8;
         filter: alpha(opacity=80); 
@@ -195,4 +203,4 @@
     }
       
     
-}
+/*}*/
