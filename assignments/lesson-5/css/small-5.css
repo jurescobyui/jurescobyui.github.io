@@ -130,7 +130,7 @@
         background-color: #83D16B;
         opacity: 0.8;
         filter: alpha(opacity=80); 
-        box-shadow: 5px 5px 18px #034e3b;
+        box-shadow: 5px 10px 18px #888888;
     }
     article{
         text-align:justify;
@@ -195,7 +195,7 @@
     }
     td.first-col{
         text-align:right;
-        width:45%;
+        width:50%;
         font-weight: bold;
         color:white;
     }
