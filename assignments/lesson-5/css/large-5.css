@@ -300,6 +300,14 @@
     background-size: cover; /* Resize the background image to cover the entire container */
     height:300px;
     }
+    .img-center{
+        width:400px;
+        margin:0 auto;
+    }
+    .days-forecast{
+       
+        display:block;
+    }
 }
 @media screen and (min-width:749px){
    header{
@@ -450,13 +458,8 @@
     .left{
         float:left;
     }
-    .img-center{
-        width:40%;
-        margin:0 auto;
-    }
-    .days-forecast{
-        display:block;
-    }
+    
+    
 }
 @media screen and (min-width:849px){
     #currentcondition{
