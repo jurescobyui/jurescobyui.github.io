@@ -18,3 +18,4 @@ function getWindowSize() {
 
 //window.onresize = resize;
 window.onresize = getWindowSize;
+
