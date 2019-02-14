@@ -1,0 +1,116 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 768px ) { /*max-width: 64em */
+header, nav, main, footer{max-width: 1028px;}
+
+nav button{display:none;}
+nav ul.hide{display:block;}
+
+nav ul li{
+    float:left;
+    width:15%;
+}
+
+#logo img {
+    width:150px;
+    margin:2px;
+    float:left;
+    margin-right:50px;
+// border: solid thin cyan;
+}
+#site-name{
+    width:55%;
+    //display: inline-block;
+    font-size:2.3em;
+    font-weight: bold;
+    padding-left:0px;
+   // padding-right:5px;
+    margin:0 auto;
+    float:left;
+ //border: solid thin violet;
+}
+
+.motto{
+    //width:300px;
+  // height:30px;
+   //padding;
+   // margin-left:97px;
+    font-size:1rem;
+    font-style: italic;
+    display:inline-block;
+    float:left;
+    
+    //border:solid thin blue;
+}
+.motto p{
+    text-align:center;
+    padding:0;
+    margin:0;
+    
+}
+
+ #currentcondition{
+     display:block;
+     position:absolute;
+     top:9px;
+     right:5px;
+     width:150px;
+     height:80px;
+     //border:dashed thin #0095AC;
+     float:right;
+     padding:5px;
+     box-shadow: 5px 5px 8px #888888;
+ }
+ #currentcondition p{
+     font-size:.7em;
+ }
+
+#currentcondition{
+    width:250px;
+}
+
+article img.article-image{
+    width:300px;
+   
+}
+.footer-column{
+   padding:10px;
+}
+.social-icons{
+    font-size:2em;
+    color:black;
+}
+footer p a{
+    list-style: none;
+    text-decoration: none;
+    color:#4B4B4B !important;
+}
+.footer-column1{
+    width:28%;
+    padding:2px;
+    float:left;
+    //border:thin solid brown;
+    margin:2px;
+}
+.footer-column2{
+    width:40%;
+    padding:2px;
+    margin:2px;
+    float:left;
+    height:100%;
+   // border:thin solid brown;
+}
+.copyright{
+
+    display:block;
+    width:100%;
+   // border:dashed thin green;
+    clear:both;
+}
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+
+} /*end large */

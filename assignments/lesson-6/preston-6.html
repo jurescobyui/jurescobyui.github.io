@@ -7,16 +7,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" media="screen and (min-width:361px)" href="css/large-5.css">
-    <link rel="stylesheet" media="screen and (max-width:360px)" href="css/small-5.css">
-
-   
-    
-    <title>WebForecasts.com</title>
+    <!--<link rel="stylesheet" media="screen and (min-width:361px)" href="css/large-5.css">
+    <link rel="stylesheet" media="screen and (max-width:360px)" href="css/small-5.css">-->
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston | WebForecasts.com</title>
 </head>
 <body>
-<div class="container">
-    <header>
+
+<header class="clearfix">
     <div id="logo">
         <img src="images/logo.png" alt="An outline image of a cloud icon">
         <span id="site-name">
@@ -31,9 +31,12 @@
         <p>Some data here</p>
     </div>
     
-    <div class="clear"></div>
-    <nav>
-        <ul>
+    
+    
+</header>
+<nav class="clearfix;">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide clearfix">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -41,102 +44,101 @@
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
-    </nav>
-    </header>
+</nav>
     
     
-    <main>
-        <h1>Preston Idaho</h1>
-        <!--<img  src="images/hero-image.jpg" class="responsive-img hero-image" alt="">-->  
-        <div class="hero-page">  
-            <!--<img src="images/hero-image.jpg" class="responsive-img hero-image" alt="hero image">-->
-            <div class="hero-overlay">        
-                <table>
-                    <caption>Weather Summary</caption>
-                    <tr>
-                        <td class="first-col">Currently:</td>
-                        <td>High</td>
-                    </tr>
-                    <tr>
-                        <td class="first-col">High:</td>
-                        <td>76 F</td>
-                    </tr>
-                    <tr>
-                        <td class="first-col">Wind Chill:</td>
-                        <td>78 F</td>
-                    </tr>
-                    <tr>
-                        <td class="first-col">Humidity:</td>
-                        <td>69%</td>
-                    </tr>
-                    <tr>
-                        <td class="first-col">Wind Speed:</td>
-                        <td>5mph</td>
-                    </tr>
-                </table>
-            </div>
-            
-        </div>
-        <div class="clear"></div>
-
-    </main>
-    <article>
-        <div class="days-forecast">
-            <h3>Five Days Forecast</h3>
-            <div class="img-center">
-                <img src="../lesson-5/images/5-days-forecast.PNG" alt="forecast">
-            </div>
-            
-        </div>
-    </article>
-    <article>
-
-        <h2>Article Title</h2>
-        <img class="article-image" src="images/article-image.PNG" alt="a guy waling in rural area">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+<main class="clearfix">
+    <h1>Preston Idaho</h1>
+     
+    <div class="hero-page">  
+       
+        <div class="hero-overlay">        
+            <table>
+                <caption>Weather Summary</caption>
+                <tr>
+                    <td class="first-col">Currently:</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td class="first-col">High:</td>
+                    <td>76 &deg;F</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Wind Chill:</td>
+                    <td>78 &deg;F</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Humidity:</td>
+                    <td>69%</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Wind Speed:</td>
+                    <td>5mph</td>
+                </tr>
+            </table>
+        </div><!--end of hero overlay div-->
         
-        <a href="#"  class="btn-light">Read More...</a>
-        <div class="clear"></div>
-    </article>
-    <footer>
-        <div class="footer-column">
-            <div class="footer-column1">
-                <h4>Contact</h4>
+    </div><!--end of hero image div-->
+    
+    <!-- articles below-->
+    <article>
+            <div class="days-forecast">
+                <h3>Five Days Forecast</h3>
+                <div class="img-center">
+                    <img src="../lesson-5/images/5-days-forecast.PNG" alt="forecast">
+                </div>
                 
-                <p class="small  left"> 
-                    WebForecasts.com 
-                    <br># 232 Main Building, Popular Street
-                    <br>Angeles City, Pampanga, Philippines
-                    <br>Tel: +63 45 320 2020
+            </div>
+        </article>
+        <article>
+            <h2>Article Title</h2>
+            <img class="article-image" src="images/article-image.PNG" alt="a guy waling in rural area">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            
+            <a href="#"  class="btn-light">Read More...</a>
+            <div class="clear"></div>
+        </article>
+        <!-- end of articles section-->
+</main><!--end of main -->
+   
+<footer>
+    <div class="footer-column">
+        <div class="footer-column1">
+            <h4>Contact</h4>
+            
+            <p class="small  left"> 
+                WebForecasts.com 
+                <br># 232 Main Building, Popular Street
+                <br>Angeles City, Pampanga, Philippines
+                <br>Tel: +63 45 320 2020
+            </p>
+            
+        </div>
+            
+        
+        <div class="footer-column2 left">
+                <img src="images/world-map.PNG"  class="responsive-img" alt="world map">
+        </div>   
+        <div class="footer-column1 ">
+                <h4>Follow Us</h4>
+                <p class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
                 </p>
                 
-            </div>
-                
-            
-            <div class="footer-column2 left">
-                    <img src="images/world-map.PNG"  class="responsive-img" alt="world map">
-            </div>   
-            <div class="footer-column1 ">
-                    <h4>Follow Us</h4>
-                    <p class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#"><i class="fab fa-google-plus"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i> </a>
-                        <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>  
-                    </p>
-                    
-            </div>
         </div>
-        <div class="copyright small">
-            <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span> &copy; 2019 | <a href="#">Terms</a>
-        </div>
-        <div class="clear"></div>
-    </footer>
+    </div>
+    <div class="copyright small">
+        <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span> &copy; 2019 | <a href="#">Terms</a>
+    </div>
+    <div class="clear"></div>
+</footer>
 
-</div>   <!--end of container div-->
-
+<script src="js/script.js"></script>
 </body>
 </html>

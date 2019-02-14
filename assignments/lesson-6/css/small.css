@@ -1,13 +1,27 @@
-/*weather site css */
-/*@media screen and (max-width:360px){*/
-    .container {
-        max-width:360px;
+*{
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
+    header, nav, main, footer{
+       // max-width:360px;
         min-width:360px;
         margin: 0 auto;
-        padding:2px;
-    // border: solid thin lightgray;
-   // background-color:khaki;
     }
+    
+    main{
+        padding:1.5%;
+    }
+    nav {
+        background-color:#F2F2F2;
+    }
+    nav button{
+        margin: .2rem 2%;
+        background-color:transparent;
+        border:none;
+        font-size:1.6rem;
+        color:#333;
+    }
+    nav ul.hide {display:none;}
+/* body rules here */
+    
     body{
         font-family: Arial, Helvetica, sans-serif;
         color: #4B4B4B;
@@ -15,14 +29,15 @@
         padding:0;
     }
     h1,h2,h3,h4,h5,h6{
-        margin:0;
-        padding:0;
+        margin:5px 0px;
+        padding-top:6px;
+        padding-bottom:6px;
         text-align:center;
         background-color: #F2F2F2;
     }
     header{
         padding:3px;
-        border-bottom: solid thin lightgreen;
+        //border-bottom: solid thin lightgreen;
     }
     #logo img {
         width:25%;
@@ -77,35 +92,37 @@
         padding:0;
         */
     }
-    ul{
+    nav ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
     // border:solid thin gray;
         
     }
-    ul li{
-    
+    nav ul li{
         display:inline-block;
+        padding:0;
+        margin:0;
         width:100%;
     
     }
-    ul li a{
+    nav ul li a{
         display:block;
         text-decoration: none;
         text-align:center;
-        padding: 15px 0;
+     
+        padding: .8rem 2%;
     // border:solid thin yellow;
     
     }
     
 
 
-    ul li a:hover{
+    nav ul li a:hover{
         color: darkgreen;
         background-color:#B0E0A1;
     }
-    .active{
+    nav ul li.active{
         color: darkgreen;
         background-color:#60ADCB;
     }
@@ -212,5 +229,14 @@
         display:none;
     }
       
+
+
+
+
+    .clearfix:after{
+        content: "";
+        display:table;
+        clear:both;
+    }
     
-/*}*/
+    
