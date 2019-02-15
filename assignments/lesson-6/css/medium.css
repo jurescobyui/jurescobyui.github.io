@@ -1,12 +1,21 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width:35rem) {
    
+    #logo img {
+        width:20%;
+        margin:2px;
+        float:left;
+    // border: solid thin cyan;
+    }
+    
     #site-name{
         float:left;
         font-size:2rem;
     }
     .motto{
         float:left;
+        margin-left:50px;
+        font-size: .8rem;
     }
    nav ul li {
      

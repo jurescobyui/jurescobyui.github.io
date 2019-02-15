@@ -20,7 +20,7 @@ nav ul li{
 #site-name{
     width:55%;
     //display: inline-block;
-    font-size:2.3em;
+    font-size:2.5em;
     font-weight: bold;
     padding-left:0px;
    // padding-right:5px;
@@ -30,15 +30,12 @@ nav ul li{
 }
 
 .motto{
-    //width:300px;
-  // height:30px;
-   //padding;
-   // margin-left:97px;
+   
     font-size:1rem;
     font-style: italic;
     display:inline-block;
     float:left;
-    
+    margin-left:auto;
     //border:solid thin blue;
 }
 .motto p{
@@ -48,26 +45,7 @@ nav ul li{
     
 }
 
- #currentcondition{
-     display:block;
-     position:absolute;
-     top:9px;
-     right:5px;
-     width:150px;
-     height:80px;
-     //border:dashed thin #0095AC;
-     float:right;
-     padding:5px;
-     box-shadow: 5px 5px 8px #888888;
- }
- #currentcondition p{
-     font-size:.7em;
- }
-
-#currentcondition{
-    width:250px;
-}
-
+ 
 article img.article-image{
     width:300px;
    
@@ -114,3 +92,27 @@ footer p a{
 }
 
 } /*end large */
+
+@media only screen and (min-width: 815px ){
+    #currentcondition{
+        display:block;
+        position:absolute;
+        top:9px;
+        right:5px;
+        width:150px;
+        height:80px;
+        //border:dashed thin #0095AC;
+        float:right;
+        padding:5px;
+        box-shadow: 5px 5px 8px #888888;
+    }
+    #currentcondition p{
+        font-size:.7em;
+    }
+   
+   #currentcondition{
+       width:250px;
+   }
+   
+
+}
