@@ -7,8 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
-    <!--<link rel="stylesheet" media="screen and (min-width:361px)" href="css/large-5.css">
-    <link rel="stylesheet" media="screen and (max-width:360px)" href="css/small-5.css">-->
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -49,7 +47,14 @@
     
 <main class="clearfix">
     <h1>Preston Idaho</h1>
-     
+     <!--just a note that in chrome when the device width is set to small like 360px and below, this loads the small image
+    and downloads the larger images as I widen the screen, but after reaching the max width and reducing the browser width,
+    the image even on the smaller screen uses the large image downloaded.
+        But in Firefox browser it actually works, the reason behind is that based on a stackoverflow post:   
+        crome uses the largest image downloaded, in the srcset that's why even when we resize the width back to small, it still uses the largest
+        image in the scrset. I also put size text in the pictures just for testing purposes and not for production.  for production and without the 
+        sizes on the picture, use the filename without the "t" in the end of the filename, ex. hero-image-large-1028w.jpg instead of 
+        hero-image-large1028wt.jpg-->
     <div class="hero-page">  
        <img srcset="images/hero-image-small-350wt.jpg 360w,
                 images/hero-image-medium-550wt.jpg 560w,
