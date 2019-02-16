@@ -104,7 +104,16 @@
         </article>
         <article>
             <h2>Article Title</h2>
-            <img class="article-image" src="images/article-image.PNG" alt="a guy waling in rural area">
+            <img class="article-image" 
+            srcset="images/article-image-360w.jpg 360w,
+                    images/article-image-med-560w.jpg 560w,
+                    images/article-image-large-640w.jpg 768w"
+            sizes="(max-width: 420px) 360px,
+                    (max-width: 560px) 421px,
+                    (max-width: 768px) 561px"
+            
+            src="images/article-image-360w.jpg" alt="a guy waling in rural area">
+
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
             
