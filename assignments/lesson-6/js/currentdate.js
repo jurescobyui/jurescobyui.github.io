@@ -4,4 +4,5 @@ var dayNum;
 var monthName=["January","February","March","April","May","July","August","September","October","November","December"];
 var year;
 var dateString=dayName[d.getDay()] + ", " + d.getDate() + " " + monthName[d.getMonth()] + " "+ d.getFullYear();
+
 document.getElementById("currentDate").innerHTML = dateString;
