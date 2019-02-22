@@ -190,12 +190,8 @@
       
     }
 
-    table{
-       // width:30%;
-       // margin:20px;
-       /* background-color: #83D16B;
-        opacity: 0.8;
-        filter: alpha(opacity=80); */
+    .hero-overlay table{
+       border:none;
     }
     caption{
             padding:3px;
@@ -208,12 +204,17 @@
         padding:5px;
         font-weight: bold;
         color:yellow;
+        border:none;
     }
     .hero-overlay td.first-col{
         text-align:right;
         width:50%;
         font-weight: bold;
         color:white;
+        border:none;
+    }
+    .hero-overlay tr td{
+        border:none;
     }
     .social-icons{
         font-size:2em;

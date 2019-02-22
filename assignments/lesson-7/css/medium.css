@@ -30,19 +30,23 @@
         margin:0 auto;
     }
 
-    /* table settings */
-    table, td, th {  
-        border: 1px solid #ddd;
-        text-align: left;
-      }
-      
-      table {
+    /* forecasts table settings */
+    #forecasts {
         border-collapse: collapse;
-        width: 100%;
+        width: 65%;
+        margin: 0 auto;
+      }
+    #forecasts  td, th {  
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size:1rem;
+        color:#4B4B4B;
       }
       
-      th, td {
-        padding: 15px;
+     
+      
+     #forecasts th, td {
+        padding: 5px;
       }
 
     article img.article-image {
