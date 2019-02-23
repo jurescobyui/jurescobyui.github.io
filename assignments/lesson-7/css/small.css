@@ -139,23 +139,30 @@
     }
 
     /* gallery images */
+    figure{
+        margin:5px;
+        padding:5px;
+      //  border: thin solid cyan;
+
+    }
     .container{
-        margin: 1rem auto;
-        //width:100%;
-         display:grid;
-         //grid-gap: 15px;
+        width:100%;
+       // margin: 1rem auto;
+        display:grid;
          grid-template-columns: 1fr;
-         border:thin solid pink;
-         max-width: 350px;
+        // border:thin solid pink;
+        
       
     }
     .container figure img{
-        width:250px;
-        
+      
+        width:95%;
          margin: .5rem;
        
     }
-    figcaption {font-size: smaller;}
+    figcaption {
+        text-align:center;
+        font-size: smaller;}
     
     .thumbnail:hover {
         box-shadow: 0 0 50px #333;

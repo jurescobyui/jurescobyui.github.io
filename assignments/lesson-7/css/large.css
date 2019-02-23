@@ -19,13 +19,6 @@ nav ul li{
 }
 
 
-
-
-
-
-
-
-
 #logo img {
     width:150px;
     margin:2px;
@@ -60,10 +53,11 @@ nav ul li{
     margin:0;
     
 }
+
 /* gallery grid */
 .container{
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1000px;
+    //max-width: 1000px;
 }
  
 article img.article-image{
@@ -135,4 +129,8 @@ footer p a{
    }
    
 
+}
+@media only screen and (min-width:1020px){
+
+    
 }
