@@ -17,9 +17,9 @@
         margin-left:50px;
         font-size: .8rem;
     }
-   nav ul li {
-     
-   }
+   
+   
+
 
    .days-forecast{   
     display:block;
@@ -43,7 +43,10 @@
         color:#4B4B4B;
       }
       
-     
+     /* grid */
+     .container{
+         grid-template-columns: 1fr 1 fr;
+     }
       
      #forecasts th, td {
         padding: 5px;

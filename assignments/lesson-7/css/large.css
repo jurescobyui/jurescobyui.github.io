@@ -1,14 +1,30 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 768px ) { /*max-width: 64em */
-header, nav, main, footer{max-width: 1028px;}
+    header, nav, main, footer{max-width: 1028px;}
+    header{
+    
+    }
 
 nav button{display:none;}
-nav ul.hide{display:block;}
+nav ul.hide{display:flex;}
 
-nav ul li{
-    float:left;
-    width:15%;
+ /* flex menu css */
+ nav ul{
+    display:flex;
+   // justify-content:space-around;
 }
+nav ul li{
+    flex: 1 1 0;
+    
+}
+
+
+
+
+
+
+
+
 
 #logo img {
     width:150px;
@@ -44,7 +60,11 @@ nav ul li{
     margin:0;
     
 }
-
+/* gallery grid */
+.container{
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+}
  
 article img.article-image{
     width:300px;
