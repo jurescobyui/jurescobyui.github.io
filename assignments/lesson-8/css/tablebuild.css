@@ -41,7 +41,9 @@ table, th, td {
 tr:nth-child(even){
     background-color: #e7ffed;
 }
- 
+ .shaded{
+  background-color:#628ca6;
+ }
  
   thead tr{
       background-color:#628ca6 !important;
