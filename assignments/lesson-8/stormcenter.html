@@ -47,10 +47,59 @@
     
 <main class="clearfix">
     <h1>Storm Center</h1>
+   
      <div class="container">
+         
          <form action="">
-            
-
+                <p>Weather Report</p>
+            <label for="full_name">Fullname</label>
+            <input type="text"id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required> 
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="myemail@domain">
+            <br>
+            <label for="telephoe">Telephone</label>
+            <input type="tel" id="tel" name="tel" required>
+            <br>
+            <label for="zipcode">Zip Code</label>
+            <input type="number" required >
+            <br>
+            <label for="storm_date">Storm Date</label>
+            <input type="date" id="storm_date" name="storm_date" >
+            <br>
+            <label for="storm_type">Storm Type</label>
+            <input list="storm_type"  name="storm_type">
+                <datalist id="storm_type">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunder Storm">
+                    <option value="Tornado">
+                </datalist>
+                <br>
+           
+                <label for="serverity">Storm Severity (1 - 10)</label> &nbsp;
+                <input type="range" id="severity" name="severity" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> &nbsp; <span id="ratingvalue">5</span><br>
+         
+            <br>
+            <label for="storm_region">Storm Region</label>
+            <select name="storm_region" id="storm_region" onclick="disableSelect()">
+                <option value="">Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>User In-Danger</legend>
+                <input type="radio" id="userInDanger" name="userInDanger" value="yes"> <label for="userInDanger">Yes </label>
+                <input type="radio" id="userInDanger2" name="userInDanger" value="Maybe"> <label for="userInDanger2">Maybe </label>
+                <input type="radio" id="userInDanger3" name="userInDanger" value="No"> <label for="userInDanger3">No </label>
+            </fieldset>
+            <br>
+            <label for="additional_info">Additonal Information</label>
+            <textarea name="additional_info" id="additional_info" cols="40" rows="3"></textarea>
+            <button type="submit">Submit</button>
          </form>
           
      </div>
@@ -102,5 +151,6 @@
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
 <script src="js/windchill.js"></script>
+<script src="js/sliderrating.js"></script>
 </body>
 </html>
