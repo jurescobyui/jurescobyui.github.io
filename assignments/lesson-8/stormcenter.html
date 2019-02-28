@@ -54,10 +54,10 @@
             <p>Please fill this weather report form</p> 
             <div class="row">
                 <div class="col-25">
-                    <label  class="form_left" for="full_name">Fullname</label>
+                    <label  class="form_left" for="full_name">Fullname <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
-                    <input class="form_right" type="text"id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required> 
+                    <input class="form_right" type="text"id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required autofocus > 
                 </div>     
             </div>
             <div class="row">
@@ -70,7 +70,7 @@
             </div>            
             <div class="row">
                 <div class="col-25">
-                    <label for="telephoe">Telephone</label>
+                    <label for="telephoe">Telephone <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
                     <input type="tel" id="tel" name="tel" required>
@@ -78,7 +78,7 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="zipcode">Zip Code</label>
+                    <label for="zipcode">Zip Code <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
                     <input type="number" required >
@@ -97,7 +97,7 @@
                     <label for="storm_type">Storm Type</label>
                 </div>
                 <div class="col-75">
-                    <input list="storm_type"  name="storm_type">
+                    <input type="list" list="storm_type"  name="storm_type">
                     <datalist id="storm_type">
                         <option value="Flash Flood">
                         <option value="Hail">
