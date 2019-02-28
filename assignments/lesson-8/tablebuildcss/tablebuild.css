@@ -1,0 +1,64 @@
+/* table build css */
+html{
+    font-family: 'Ubuntu', sans-serif; 
+}
+main{
+    max-width:500px;
+    margin:0 auto;
+    
+}
+
+.resp-table{
+  width:75%;
+  box-shadow: 15px 15px 15px #7FB9C2;
+}
+table{
+   width: 100%;
+   text-align:center;
+   
+    border:collapse;
+   
+}
+table caption{
+    font-size:3em;
+    font-weight: bold;
+    background-color: #7FB9C2 ;
+    color:black;
+}
+table, th, td {
+    border: 1px solid#C6C9C8;
+    border-collapse: collapse;
+    
+   
+  }
+  th, td {
+    padding: 10px;
+  }
+  tr:nth-child(odd){
+    background-color: #e7f0ed;;
+}
+
+tr:nth-child(even){
+    background-color: #e7ffed;
+}
+ .shaded{
+  background-color:#628ca6;
+ }
+ 
+  thead tr{
+      background-color:#628ca6 !important;
+      font-weight:bolder;
+      font-size:1.5rem;
+      color:white;
+  }
+  tbody{
+    font-weight: bold;
+  }
+  tfoot tr {
+    background-color: #7FB9C2  !important;
+    font-weight:normal;
+  }
+
+ 
+ 
+  
