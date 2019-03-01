@@ -57,7 +57,7 @@
                     <label  class="form_left" for="full_name">Fullname <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
-                    <input class="form_right" type="text"id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required autofocus > 
+                    <input class="form_right" type="text" id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required autofocus > 
                 </div>     
             </div>
             <div class="row">
@@ -70,7 +70,7 @@
             </div>            
             <div class="row">
                 <div class="col-25">
-                    <label for="telephoe">Telephone <span class="required">*</span></label>
+                    <label for="tel">Telephone <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
                     <input type="tel" id="tel" name="tel" required>
@@ -81,7 +81,7 @@
                     <label for="zipcode">Zip Code <span class="required">*</span></label>
                 </div>
                 <div class="col-75">
-                    <input type="number" required >
+                    <input type="number" id="zipcode" name="zipcode" required >
                 </div>
             </div>
             <div class="row">
@@ -97,7 +97,7 @@
                     <label for="storm_type">Storm Type</label>
                 </div>
                 <div class="col-75">
-                    <input type="list" list="storm_type"  name="storm_type">
+                    <input type="list" list="storm_type"  id="storm_type" name="storm_type">
                     <datalist id="storm_type">
                         <option value="Flash Flood">
                         <option value="Hail">
@@ -109,7 +109,7 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="serverity">Storm Severity (1 - 10)</label>
+                    <label for="severity">Storm Severity (1 - 10)</label>
                 </div>
                 <div class="col-75">
                     <input type="range" id="severity" name="severity" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> &nbsp; <span id="ratingvalue">5</span>
@@ -132,7 +132,7 @@
             <div class="row">
                 
                 <div class="col-25">
-                       <label for="">User In Danger</label> 
+                       <label>User In Danger</label> 
                         
                 </div>
                 <div class="col-75">
