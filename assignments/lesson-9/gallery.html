@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/medium-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+    <title>Gallery | WebForecasts.com</title>
+</head>
+<body>
+
+<header class="clearfix">
+    <div id="logo">
+        <img src="images/logo.png" alt="An outline image of a cloud icon">
+        <span id="site-name">
+            <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span>
+        </span>
+        <div class="motto">
+                <p>Your daily source of weather information and more</p>
+        </div>
+    </div>
+    <div id="currentcondition">
+        <h5>Current Conditions</h5>
+        <p>Some data here</p>
+    </div>
+    
+    
+    
+</header>
+<nav class="clearfix;">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+</nav>
+    
+    
+<main class="clearfix">
+    <h1>Gallery</h1>
+     <div class="container">
+         <figure>
+             <img class="thumbnail" src="images/gallery/thumbnails/beach1.jpg" alt="beach">
+             <figcaption>
+                    A picture object with a beach background
+             </figcaption>
+         </figure>
+         <figure>
+            <img class="thumbnail" src="images/gallery/thumbnails/city.jpg" alt="beach">
+            <figcaption>
+                    A picture of a city view
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="thumbnail" src="images/gallery/thumbnails/fogt.jpg" alt="beach">
+            <figcaption>
+                    A picture mountain view with fog
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="thumbnail" src="images/gallery/thumbnails/rainbow-skyt.jpg" alt="beach">
+            <figcaption>
+                    A picture of view with rainbow
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="thumbnail" src="images/gallery/thumbnails/raint.jpg" alt="beach">
+            <figcaption>
+                    A picture of a bus in a rainy day
+            </figcaption>
+        </figure>
+        <figure>
+            <img class="thumbnail" src="images/gallery/thumbnails/storm1t.jpg" alt="beach">
+            <figcaption>
+                    A picture of thunder
+            </figcaption>
+        </figure>           
+     </div>
+    
+    <!-- articles below-->
+    
+</main><!--end of main -->
+   
+<footer>
+    <div class="footer-column">
+        <div class="footer-column1">
+            <h4>Contact</h4>
+            
+            <p class="small  left"> 
+                WebForecasts.com 
+                <br># 232 Main Building, Popular Street
+                <br>Angeles City, Pampanga, Philippines
+                <br>Tel: +63 45 320 2020
+            </p>
+            
+        </div>
+            
+        
+        <div class="footer-column2 left">
+                <!--<img src="images/world-map.PNG"  class="responsive-img" alt="world map">-->
+                <!--maps-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m20!1m8!1m3!1d1925.711528288808!2d120.59645723941524!3d15.135093659690602!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d15.135242!2d120.5959931!4m3!3m2!1d15.1352438!2d120.5959852!5e0!3m2!1sen!2sph!4v1550270432714"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                <!--end maps-->
+        </div>   
+        <div class="footer-column1 ">
+                <h4>Follow Us</h4>
+                <p class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
+                </p>
+                
+        </div>
+    </div>
+    <div class="copyright small">
+        <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span> &copy; <span id="currentDate"> </span> | <a href="#">Terms</a>
+    </div>
+    <div class="clear"></div>
+</footer>
+
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+<script src="js/windchill.js"></script>
+</body>
+</html>
