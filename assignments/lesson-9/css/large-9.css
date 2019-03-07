@@ -95,7 +95,7 @@ footer p a{
 
     display:block;
     width:100%;
-   // border:dashed thin green;
+   /* border:dashed thin green;*/
     clear:both;
 }
 .right{
@@ -105,6 +105,34 @@ footer p a{
     float:left;
 }
 
+.flex-container{
+    max-width:1000px;
+    display:flex;
+    flex-wrap: wrap;
+    /*flex-flow: column wrap;*/
+    align-items: stretch;
+   justify-content: space-between;
+    
+}
+.card{
+    width:300px;
+    border:thin solid lightgrey;
+   padding-bottom:0px;
+    /*position: relative;*/
+   
+}
+.card p{
+    padding:15px;
+}
+.card img{
+    width:100%;
+   margin:0;
+   margin-bottom:-5px;
+   padding:0;
+    /*position: absolute;
+    bottom:0;*/
+    
+}
 } /*end large */
 
 @media only screen and (min-width: 815px ){
