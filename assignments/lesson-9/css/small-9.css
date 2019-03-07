@@ -1,7 +1,6 @@
 *{
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing:border-box;}
     header, nav, main, footer{
-       // max-width:360px;
         min-width:360px;
         margin: 0 auto;
     }
@@ -40,13 +39,13 @@
     }
     header{
         padding:3px;
-        //border-bottom: solid thin lightgreen;
+      
     }
     #logo img {
         width:25%;
         margin:2px;
         float:left;
-    // border: solid thin cyan;
+   
     }
     #site-name{
         margin:0;
@@ -56,14 +55,13 @@
         padding-left:7%;
         padding-right:5px;
         float:right;
-    // border: solid thin violet;
+   
     text-shadow: 2px 2px 2px #888888;
     }
     .motto{
         margin:0;
         font-size:.7rem;
         font-style: italic;
-        //display:inline-block;
         float:right;
     }
     .motto p{
@@ -159,7 +157,7 @@
         top:10px;
         left:10px;
         padding:5px;
-        //border: solid thin magenta;
+        
         width:250px;
         background-color: #83D16B;
         opacity: 0.8;
@@ -171,23 +169,16 @@
     figure{
         margin:5px;
         padding:5px;
-      //  border: thin solid cyan;
-
+      
     }
     .container{
         width:100%;
-       // margin: 1rem auto;
         display:grid;
          grid-template-columns: 1fr;
-        // border:thin solid pink;
-        
-      
     }
     .container figure img{
-      
         width:95%;
          margin: .5rem;
-       
     }
     figcaption {
         text-align:center;
@@ -196,13 +187,6 @@
     .thumbnail:hover {
         box-shadow: 0 0 50px #333;
     }
-
-
-
-
-
-
-
 
     article{
         text-align:justify;

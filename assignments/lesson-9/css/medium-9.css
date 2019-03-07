@@ -42,7 +42,9 @@
         font-size:1rem;
         color:#4B4B4B;
       }
-      
+      main{
+          padding:0px;
+      }
      /* grid */
      .container{
         

@@ -11,7 +11,7 @@ nav ul.hide{display:flex;}
  /* flex menu css */
  nav ul{
     display:flex;
-   // justify-content:space-around;
+   /* justify-content:space-around;*/
 }
 nav ul li{
     flex: 1 1 0;
@@ -24,18 +24,16 @@ nav ul li{
     margin:2px;
     float:left;
     margin-right:50px;
-// border: solid thin cyan;
+/*border: solid thin cyan;*/
 }
 #site-name{
-    width:55%;
-    //display: inline-block;
+    width:55%;  
     font-size:2.5em;
     font-weight: bold;
     padding-left:0px;
-   // padding-right:5px;
     margin:0 auto;
     float:left;
- //border: solid thin violet;
+ 
 }
 
 .motto{
@@ -45,7 +43,7 @@ nav ul li{
     display:inline-block;
     float:left;
     margin-left:auto;
-    //border:solid thin blue;
+    /*border:solid thin blue;*/
 }
 .motto p{
     text-align:center;
@@ -54,10 +52,13 @@ nav ul li{
     
 }
 
+main{
+    margin-top:-10px;
+}
 /* gallery grid */
 .container{
     grid-template-columns: 1fr 1fr 1fr;
-    //max-width: 1000px;
+  
 }
  
 article img.article-image{
@@ -80,7 +81,7 @@ footer p a{
     width:28%;
     padding:2px;
     float:left;
-    //border:thin solid brown;
+  
     margin:2px;
 }
 .footer-column2{
@@ -156,7 +157,7 @@ footer p a{
        width:250px;
    }
    
-
+  
 }
 @media only screen and (min-width:1020px){
 
