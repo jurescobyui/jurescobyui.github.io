@@ -1,9 +1,7 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 768px ) { /*max-width: 64em */
     header, nav, main, footer{max-width: 1028px;}
-    header{
-    
-    }
+   
 
 nav button{display:none;}
 nav ul.hide{display:flex;}
@@ -40,7 +38,7 @@ nav ul li{
    
     font-size:1rem;
     font-style: italic;
-    display:inline-block;
+   /* display:inline-block;*/
     float:left;
     margin-left:auto;
     /*border:solid thin blue;*/
@@ -90,7 +88,7 @@ footer p a{
     margin:2px;
     float:left;
     height:100%;
-   // border:thin solid brown;
+   /* border:thin solid brown;*/
 }
 .copyright{
 
@@ -144,7 +142,7 @@ footer p a{
         right:5px;
         width:150px;
         height:80px;
-        //border:dashed thin #0095AC;
+        /*border:dashed thin #0095AC;*/
         float:right;
         padding:5px;
         box-shadow: 5px 5px 8px #888888;
