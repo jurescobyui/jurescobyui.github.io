@@ -11,7 +11,7 @@ var request = new XMLHttpRequest();
        for(var i=0; i < townData.towns.length; i++){
          if(townData.towns[i].name==="Franklin" || townData.towns[i].name==="Greenville" || townData.towns[i].name ==="Springfield"){
                 //create a div
-                var newFlex=document.createElement('div'); // declare a new div 
+                var newFlex=document.createElement('div'); // declare a new div flex child
                 newFlex.className="card"; // assign a class name card
                 divFlex.appendChild(newFlex);   // create the div
 
@@ -36,11 +36,10 @@ var request = new XMLHttpRequest();
                 newFlex.appendChild(myImg);
 
                 console.log(i + " " + townData.towns[i].name);
-        // createCard(townData);
+        
             }// end of if
          }
-      //createCard(townData, i);
-       // showTownData(townData);
+     
       }// end of function
     
   
