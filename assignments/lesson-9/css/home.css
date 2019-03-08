@@ -1,0 +1,32 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 768px ) { /*max-width: 64em */
+    header, nav, main, footer{max-width: 1028px;}
+    #brand{
+        width:100%;
+        height:95px;
+        border:thin solid green;
+    }
+
+    #site-name{
+        width:55%;  
+        font-size:3.5em;
+        float:right;
+       
+        border:thin solid cyan;
+     
+    }
+    
+    .motto{
+        font-size:1.3rem;
+      float:right;
+       
+    }
+    .motto p{
+        text-align:center;
+        padding:0;
+        float:right;
+        margin-right:90px;
+        
+    }
+    
+}

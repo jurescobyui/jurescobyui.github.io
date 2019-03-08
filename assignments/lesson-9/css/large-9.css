@@ -26,7 +26,7 @@ nav ul li{
 }
 #site-name{
     width:55%;  
-    font-size:3.5em;
+    font-size:2.5em;
     font-weight: bold;
     padding-left:0px;
     margin:0 auto;
@@ -36,7 +36,7 @@ nav ul li{
 
 .motto{
    
-    font-size:1.5rem;
+    font-size:1rem;
     font-style: italic;
    /* display:inline-block;*/
     float:left;
@@ -63,17 +63,23 @@ article img.article-image{
     width:300px;
    
 }
-.flex-container{
+.flex-container, .footer-column{
     width:98%;
     margin: 0 auto;
 }
 .footer-column{
-   padding:10px;
+    width:98%;
+   border: thin solid cyan;
+   padding:5px;
+   display:flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 .social-icons{
     font-size:2em;
     color:black;
 }
+
 footer p a{
     list-style: none;
     text-decoration: none;
