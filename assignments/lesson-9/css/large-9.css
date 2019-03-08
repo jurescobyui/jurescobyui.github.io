@@ -69,7 +69,7 @@ article img.article-image{
 }
 .footer-column{
     width:98%;
-   border: thin solid cyan;
+   /*border: thin solid cyan;*/
    padding:5px;
    display:flex;
    justify-content: space-between;
