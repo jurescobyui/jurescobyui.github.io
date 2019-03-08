@@ -20,7 +20,7 @@ var request = new XMLHttpRequest();
                 newFlex.appendChild(myH3);// add the element to the dom
 
                 var myP1=document.createElement('p');// declare a new p element
-                myP1.innerHTML="<strong>" + townData.towns[i].motto+"</strong>";
+                myP1.innerHTML="<strong><em>" + townData.towns[i].motto+"</em></strong>";
                 newFlex.appendChild(myP1);// create the new p
 
                 var myP2=document.createElement('p');// declare a new p element
