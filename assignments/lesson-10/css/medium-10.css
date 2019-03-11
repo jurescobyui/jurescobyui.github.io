@@ -1,0 +1,71 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width:35rem) {
+   
+    #logo img {
+        width:20%;
+        margin:2px;
+        float:left;
+    /*border: solid thin cyan;*/
+    }
+    
+    #site-name{
+        float:left;
+        font-size:2rem;
+    }
+    .motto{
+        float:left;
+        margin-left:50px;
+        font-size: .8rem;
+    }
+   
+   
+
+
+   .days-forecast{   
+    display:block;
+    }
+
+    .img-center{
+        width:400px;
+        margin:0 auto;
+    }
+
+    /* forecasts table settings */
+    #forecasts {
+        border-collapse: collapse;
+        width: 65%;
+        margin: 0 auto;
+      }
+    #forecasts  td, th {  
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size:1rem;
+        color:#4B4B4B;
+      }
+      main{
+          padding:0px;
+      }
+     /* grid */
+     .container{
+        
+         grid-template-columns: 1fr 1fr;
+     }
+      
+     #forecasts th, td {
+        padding: 5px;
+      }
+
+    article img.article-image {
+        width:50%;
+        float:right;
+        margin: 0 0 5px 5px;
+    }
+    .card{
+        width:48%;
+    }
+} /*end medium */
+
+
+
+
+
