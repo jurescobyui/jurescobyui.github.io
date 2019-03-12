@@ -1,5 +1,5 @@
 let weatherRequest = new XMLHttpRequest();
-var apiURLstring = "http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=8ec39d712acbcc119f2f75333221c559";
+var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=8ec39d712acbcc119f2f75333221c559";
 //working api for openweather
 weatherRequest.open("GET",apiURLstring,true);
 //weatherRequest.responseType = 'json';
