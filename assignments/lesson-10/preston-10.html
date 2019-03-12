@@ -39,7 +39,7 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide clearfix">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="preston-8.html">Preston</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter.html">Storm Center</a></li>
@@ -72,11 +72,11 @@
                 <caption>Weather Summary</caption>
                 <tr>
                     <td class="first-col">Currently:</td>
-                    <td>High</td>
+                    <td><span id="description">High</span></td>
                 </tr>
                 <tr>
                     <td class="first-col">High:</td>
-                    <td><span id="tempBase">76</span> &deg;F</td>
+                    <td><span id="current-temp"></span> &deg;F</td>
                 </tr>
                 <tr>
                     <td class="first-col">Wind Chill:</td>
@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                     <td class="first-col">Humidity:</td>
-                    <td>69%</td>
+                    <td> <span id="humidity" >69%</span></td>
                 </tr>
                 <tr>
                     <td class="first-col">Wind Speed:</td>
@@ -100,6 +100,13 @@
     <article>
             <div class="days-forecast">
                 <h3>Five Days Forecast</h3>
+                <p id="forecastData"></p>
+                <p id="date"></p>
+                <p id="iconName"></p>
+                <p id="wdescription"></p>
+                <p id="tempMax"></p>
+                <p id="tempMin"></p>
+                <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
                 <table id="forecasts">
                     <tr>
                             <th>Mon</th>
@@ -197,6 +204,7 @@
 
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
-<script src="js/windchill.js"></script>
+
+<script src="js/weatherapi.js"></script>
 </body>
 </html>
