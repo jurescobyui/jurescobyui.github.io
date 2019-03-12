@@ -6,8 +6,8 @@ weatherRequest.open("GET",apiURLstring,true);
 weatherRequest.send();
 
 weatherRequest.onload = function() {
-    //assign response to var jsonObj
-//var jsonObj = weatherRequest.response;
+    //assign response to var weatherData
+
 let weatherData = JSON.parse(weatherRequest.responseText);
 console.log(weatherData);
     //get current temp from json array assign to var curTemp
