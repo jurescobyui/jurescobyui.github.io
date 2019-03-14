@@ -17,9 +17,13 @@ var description = weatherData.weather[0].description;
 var windChill = weatherData.wind.deg;
 var humidity = weatherData.main.humidity;
 var windSpeed = weatherData.wind.speed;
+var iconcode=weatherData.weather[0].icon;
+var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
     //output the current temp in the html
+   document.getElementById('wicon').src=iconurl;
    document.getElementById('current-temp').innerHTML=curTemp;
    document.getElementById('description').innerHTML=description;
+   document.getElementById('currentConditions').innerHTML=description;
    document.getElementById('windChillOutput').innerHTML=windChill;
    document.getElementById('humidity').innerHTML=humidity;
    document.getElementById('windSpeed').innerHTML=windSpeed;
@@ -39,18 +43,11 @@ forecastRequest.onload = function() {
     let forecastData = JSON.parse(forecastRequest.responseText);
  console.log(forecastData);
  var dayName=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
-
- var day1name="";
  var targetDiv = document.querySelector('div.days-forecast');
    // get the total elements in the list array
 var nDays = forecastData.list.length;
     // loop trhough the  list array
-    /*var apiTable=document.createElement('table');
-    apiTable.id="forecasts";
-    targetDiv.appendChild(apiTable);*/
-
-    /* var thRow = document.createElement('tr'); // declare tr
-     apiTable.appendChild(thRow); //create tr */
+  
      var counter=1;
 
     for(var i=0; i< nDays;i++){
@@ -66,7 +63,6 @@ var nDays = forecastData.list.length;
             //if data time is 18:00 hours, display this
               
         var iconcode=forecastData.list[i].weather[0].icon;
-      
         var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
        
         var tempMain= forecastData.list[i].main.temp;    

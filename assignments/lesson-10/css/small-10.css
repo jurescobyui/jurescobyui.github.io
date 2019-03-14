@@ -191,7 +191,9 @@
     .thumbnail:hover {
         box-shadow: 0 0 50px #333;
     }
-
+    section div.events  ul {
+        list-style-type:none;
+    }
     article{
         text-align:justify;
         padding:3px;

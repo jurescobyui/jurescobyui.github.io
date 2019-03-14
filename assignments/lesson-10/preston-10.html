@@ -29,7 +29,7 @@
     
     <div id="currentcondition">
         <h5>Current Conditions</h5>
-        <p>Some data here</p>
+        <p ><img id="wicon" src="" alt="Weather icon"> <span id="currentConditions"></span></p>
     </div>
     
     
@@ -139,23 +139,31 @@
                 
             </div>
         </article>
-        <article>
+        <section>
+                <div class="events">
+                
+                </div>
+         </section>
+        <article>   
             <h2>Article Title</h2>
-            <img class="article-image" 
-            srcset="images/article-image-360w.jpg 360w,
-                    images/article-image-med-560w.jpg 560w,
-                    images/article-image-large-640w.jpg 768w"
-            sizes="(max-width: 420px) 360px,
-                    (max-width: 560px) 421px,
-                    (max-width: 768px) 561px"
-            
-            src="images/article-image-360w.jpg" alt="a guy waling in rural area">
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-            
-            <a href="#"  class="btn-light">Read More...</a>
-            <div class="clear"></div>
+             <!--events start -->
+         
+        
+                <img class="article-image" 
+                srcset="images/article-image-360w.jpg 360w,
+                        images/article-image-med-560w.jpg 560w,
+                        images/article-image-large-640w.jpg 768w"
+                sizes="(max-width: 420px) 360px,
+                        (max-width: 560px) 421px,
+                        (max-width: 768px) 561px"
+                
+                src="images/article-image-360w.jpg" alt="a guy waling in rural area">
+    
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                
+                <a href="#"  class="btn-light">Read More...</a>
+                <div class="clear"></div>
         </article>
         <!-- end of articles section-->
 </main><!--end of main -->
@@ -204,5 +212,6 @@
 <script src="js/currentdate.js"></script>
 <script src="js/weatherapi.js"></script>
 <script src="js/windchill.js"></script>
+<script src="js/events.js"></script>
 </body>
 </html>
