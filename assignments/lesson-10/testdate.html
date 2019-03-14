@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Date</title>
+</head>
+<body>
+    <p> Date output</p>
+    <p id="output"></p>
+<script>
+function getDayName(newDt){
+        var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var dt=newDt;
+        var myDate = new Date(dt);
+        var  curDate=myDate.getDay();
+        var dayName=days[curDate];
+        return dayName;
+    }
+
+function myCurtime(newDt){
+    var iDate=new Date(newDt);
+    var curTime=iDate.getHours();
+    return curTime;
+}
+
+var inputDate="2019-03-14 18:00:00";
+var iDate = new Date(inputDate);
+//document.getElementById('output').innerHTML=getDayName(inputDate) + " " + myCurtime(inputDate);
+document.getElementById('output').innerHTML=iDate.getHours();
+    
+</script>
+</body>
+</html>

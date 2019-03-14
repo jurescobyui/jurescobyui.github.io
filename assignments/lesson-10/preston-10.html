@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                     <td class="first-col">Humidity:</td>
-                    <td> <span id="humidity" >69%</span></td>
+                    <td> <span id="humidity" >69%</span>%</td>
                 </tr>
                 <tr>
                     <td class="first-col">Wind Speed:</td>
@@ -100,43 +100,41 @@
     <article>
             <div class="days-forecast">
                 <h3>Five Days Forecast</h3>
-                <p id="forecastData"></p>
+               <!-- <p id="forecastData"></p>
                 <p id="date"></p>
                 <p id="iconName"></p>
                 <p id="wdescription"></p>
                 <p id="tempMax"></p>
-                <p id="tempMin"></p>
-                <div id="icon"><img id="wicon" src="" alt="Weather icon"></div>
+                <p id="tempMin"></p>-->
+                <!--<div id="icon"><img id="wicon" src="" alt="Weather icon"></div>-->
+                <!--api creates table here-->
                 <table id="forecasts">
-                    <tr>
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-cloud"></i></td>
-                        <td><i class="fas fa-cloud-moon"></i></td>
-                        <td><i class="fas fa-cloud-moon-rain"></i></td>
-                        <td><i class="fas fa-cloud-sun"></i></td>
-                        <td><i class="fas fa-sun"></i></td>
-                    </tr>
-                    <tr>
-                        <td>29 &deg; </td>
-                        <td>30 &deg; </td>
-                        <td>27 &deg; </td>
-                        <td>28 &deg; </td>
-                        <td>29 &deg; </td>
-                    </tr>
-                    <tr>
-                        <td>22 &deg; </td>
-                        <td>25 &deg; </td>
-                        <td>26 &deg; </td>
-                        <td>25 &deg; </td>
-                        <td>27 &deg; </td>
-                    </tr>
-                    
+                        <!--the values  will be over-written by weatherapi-->
+                        <tr>
+                                <th><span id="day1">Mon</span></th>
+                                <th><span id="day2">Tue</span></th>
+                                <th><span id="day3">Wed</span></th>
+                                <th><span id="day4">Thu</span></th>
+                                <th><span id="day5">Fri</span></th>
+                               
+                        </tr>
+                        <tr>
+                            <td><img id="wicon1" src="" alt="Weather icon"></td>
+                            <td><img id="wicon2" src="" alt="Weather icon"></td>
+                            <td><img id="wicon3" src="" alt="Weather icon"></td>
+                            <td><img id="wicon4" src="" alt="Weather icon"></td>
+                            <td><img id="wicon5" src="" alt="Weather icon"></td>
+                        
+                        <tr>
+                            <td><span id="dayTemp1">29</span>&deg;F</td>
+                            <td><span id="dayTemp2">30</span>&deg;F</td>
+                            <td><span id="dayTemp3">35</span>&deg;F</td>
+                            <td><span id="dayTemp4">40</span>&deg;F</td>
+                            <td><span id="dayTemp5">28</span>&deg;F</td>
+                            
+                        </tr>   
+                
+                
                 </table>
                 
             </div>
@@ -204,7 +202,7 @@
 
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
-
 <script src="js/weatherapi.js"></script>
+<script src="js/windchill.js"></script>
 </body>
 </html>
