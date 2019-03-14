@@ -26,7 +26,7 @@ var windSpeed = weatherData.wind.speed;
 }
 
 let forecastRequest = new XMLHttpRequest();
-var xhrURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
+var xhrURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
 //http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559
 
 //working api for openweather
