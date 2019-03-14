@@ -76,10 +76,16 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
   
 }
+.grid-container {
+    display: grid;
+    grid-column-gap:10px;
+    grid-template-columns: 35%  auto;
+   
+  }
  .events{
-    
+    /*
      width:48%;
-     margin:0 auto;
+     margin:0 auto;*/
  }
 article img.article-image{
     width:300px;
