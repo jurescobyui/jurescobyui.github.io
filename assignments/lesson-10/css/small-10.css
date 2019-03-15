@@ -117,7 +117,7 @@
 /*home page flex display*/
     .flex-container{
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         
     }
@@ -127,8 +127,6 @@
         /* width:300px;*/
     border:thin solid lightgrey;
     box-shadow: 5px 10px 18px #888888;
-   
-    /*position: relative;*/
     
     }
     .card h3{
@@ -142,8 +140,9 @@
     .card img{
         width:100%;
        margin:0px;
-       margin-bottom:-5px;
         margin-top:0px;
+       /* position:absolute;*/
+        bottom:0px;
     }
 
 

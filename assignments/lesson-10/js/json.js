@@ -8,8 +8,9 @@ var request = new XMLHttpRequest();
 
     request.onload = function() {
         var townData = request.response;
+
        for(var i=0; i < townData.towns.length; i++){
-         if(townData.towns[i].name==="Franklin" || townData.towns[i].name==="Greenville" || townData.towns[i].name ==="Springfield"){
+         if(townData.towns[i].name==="Preston" || townData.towns[i].name==="Fish Haven" || townData.towns[i].name ==="Soda Springs"){
                 //create a div
                 var newFlex=document.createElement('div'); // declare a new div flex child
                 newFlex.className="card"; // assign a class name card
