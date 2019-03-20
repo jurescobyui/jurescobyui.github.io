@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston | WebForecasts.com</title>
+</head>
+<body>
+
+<header class="clearfix">
+    <div id="logo">
+        <img src="images/logo.png" alt="An outline image of a cloud icon">
+    </div>
+    <div id="brand">
+        <span id="site-name">
+        <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span>
+        </span>
+        <div class="motto">
+                <p>Your daily source of weather information and more</p>
+        </div>
+    </div>  
+    
+    <div id="currentcondition">
+        <h5>Current Conditions</h5>
+        <p ><img id="wicon" src="" alt="Weather icon"> <span id="currentConditions"></span></p>
+    </div>
+    
+    
+    
+</header>
+<nav class="clearfix;">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+</nav>
+    
+    
+<main class="clearfix">
+    <h1>Preston Idaho</h1>
+     <!--just a note that in chrome when the device width is set to small like 360px and below, this loads the small image
+    and downloads the larger images as I widen the screen, but after reaching the max width and reducing the browser width,
+    the image even on the smaller screen uses the large image downloaded.
+        But in Firefox browser it actually works, the reason behind is that based on a stackoverflow post:   
+        crome uses the largest image downloaded, in the srcset that's why even when we resize the width back to small, it still uses the largest
+        image in the scrset. I also put size text in the pictures just for testing purposes and not for production.  for production and without the 
+        sizes on the picture, use the filename without the "t" in the end of the filename, ex. hero-image-large-1028w.jpg instead of 
+        hero-image-large1028wt.jpg-->
+    <div class="hero-page">  
+       <img srcset="images/hero-image-small-350wt.jpg 360w,
+                images/hero-image-medium-550wt.jpg 560w,
+                images/hero-image-large-1028wt.jpg 768w"
+        sizes="(max-width: 420px) 360px,
+                (max-width: 560px) 421px,
+                (max-width: 768px) 561px"
+       src="images/hero-image-small-350wt.jpg" class="hero-image" alt="mountainn view with sun shining">
+
+        <div class="hero-overlay">        
+            <table>
+                <caption>Weather Summary</caption>
+                <tr>
+                    <td class="first-col">Currently:</td>
+                    <td><span id="description">High</span></td>
+                </tr>
+                <tr>
+                    <td class="first-col">High:</td>
+                    <td><span id="current-temp"></span> &deg;F</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Wind Chill:</td>
+                    <td><span id="windChillOutput">78</span>&deg;F</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Humidity:</td>
+                    <td> <span id="humidity" >69%</span>%</td>
+                </tr>
+                <tr>
+                    <td class="first-col">Wind Speed:</td>
+                    <td><span id="windSpeed">5</span>mph</td>
+                </tr>
+                
+            </table>
+        </div><!--end of hero overlay div-->
+        
+    </div><!--end of hero image div-->
+    
+    <!-- articles below-->
+    <article>
+            <div class="days-forecast">
+                <h3>Five Days Forecast</h3>
+               <!-- <p id="forecastData"></p>
+                <p id="date"></p>
+                <p id="iconName"></p>
+                <p id="wdescription"></p>
+                <p id="tempMax"></p>
+                <p id="tempMin"></p>-->
+                <!--<div id="icon"><img id="wicon" src="" alt="Weather icon"></div>-->
+                <!--api creates table here-->
+                <table id="forecasts">
+                        <!--the values  will be over-written by weatherapi-->
+                        <tr>
+                                <th><span id="day1">Mon</span></th>
+                                <th><span id="day2">Tue</span></th>
+                                <th><span id="day3">Wed</span></th>
+                                <th><span id="day4">Thu</span></th>
+                                <th><span id="day5">Fri</span></th>
+                               
+                        </tr>
+                        <tr>
+                            <td><img id="wicon1" src="" alt="Weather icon"></td>
+                            <td><img id="wicon2" src="" alt="Weather icon"></td>
+                            <td><img id="wicon3" src="" alt="Weather icon"></td>
+                            <td><img id="wicon4" src="" alt="Weather icon"></td>
+                            <td><img id="wicon5" src="" alt="Weather icon"></td>
+                        
+                        <tr>
+                            <td><span id="dayTemp1">29</span>&deg;F</td>
+                            <td><span id="dayTemp2">30</span>&deg;F</td>
+                            <td><span id="dayTemp3">35</span>&deg;F</td>
+                            <td><span id="dayTemp4">40</span>&deg;F</td>
+                            <td><span id="dayTemp5">28</span>&deg;F</td>
+                            
+                        </tr>   
+                
+                
+                </table>
+                
+            </div>
+        </article>
+        <article class="grid-container">  
+        <section>
+                <div class="events">
+                <!--events.js will pupulate this with json events-->
+                </div>
+         </section>
+         <section>
+            <h2>Article Title</h2>
+             <!--events start -->
+         
+        
+                <img class="article-image" 
+                srcset="images/article-image-360w.jpg 360w,
+                        images/article-image-med-560w.jpg 560w,
+                        images/article-image-large-640w.jpg 768w"
+                sizes="(max-width: 420px) 360px,
+                        (max-width: 560px) 421px,
+                        (max-width: 768px) 561px"
+                
+                src="images/article-image-360w.jpg" alt="a guy waling in rural area">
+    
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                
+                <a href="#"  class="btn-light">Read More...</a>
+            </section>
+        </article>
+        <!-- end of articles section-->
+</main><!--end of main -->
+   
+<footer>
+    <div class="footer-column">
+        <div class="footer-column1">
+            <h4>Contact</h4>
+            
+            <p class="small  left"> 
+                WebForecasts.com 
+                <br># 232 Main Building, Popular Street
+                <br>Angeles City, Pampanga, Philippines
+                <br>Tel: +63 45 320 2020
+            </p>
+            
+        </div>
+            
+        
+        <div class="footer-column2 left">
+                <!--<img src="images/world-map.PNG"  class="responsive-img" alt="world map">-->
+                <!--maps-->
+                <img src="images/location-map.PNG"  class="responsive-img" alt="location map">
+               
+        </div>   
+        <div class="footer-column1 ">
+                <h4>Follow Us</h4>
+                <p class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
+                </p>
+                
+        </div>
+    </div>
+    <div class="copyright small">
+        <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span> &copy; <span id="currentDate"> </span> | <a href="#">Terms</a>
+    </div>
+    <div class="clear"></div>
+</footer>
+
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+<script src="js/weatherapi.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/events.js"></script>
+</body>
+</html>

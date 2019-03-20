@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center | WebForecasts.com</title>
+</head>
+<body>
+
+<header class="clearfix">
+    <div id="logo">
+        <img src="images/logo.png" alt="An outline image of a cloud icon">
+        <span id="site-name">
+            <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span>
+        </span>
+        <div class="motto">
+                <p>Your daily source of weather information and more</p>
+        </div>
+    </div>
+    <div id="currentcondition">
+        <h5>Current Conditions</h5>
+        <p>Some data here</p>
+    </div>
+    
+    
+    
+</header>
+<nav class="clearfix;">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide clearfix">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li ><a href="gallery.html">Gallery</a></li>
+        </ul>
+</nav>
+    
+    
+<main class="clearfix">
+    <h1>Storm Center</h1>
+   
+     <div class="form_container">
+         
+         <form action="thankyou.html" method="get">
+            <p>Please fill this weather report form</p> 
+            <div class="row">
+                <div class="col-25">
+                    <label  class="form_left" for="full_name">Fullname <span class="required">*</span></label>
+                </div>
+                <div class="col-75">
+                    <input class="form_right" type="text" id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required autofocus > 
+                </div>     
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="myemail@domain">
+                </div>
+            </div>            
+            <div class="row">
+                <div class="col-25">
+                    <label for="tel">Telephone <span class="required">*</span></label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="zipcode">Zip Code <span class="required">*</span></label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="zipcode" name="zipcode" required >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="storm_date">Storm Date</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="storm_date" name="storm_date" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="storm_type">Storm Type</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" list="storm_type_data"  id="storm_type" name="storm_type">
+                    <datalist id="storm_type_data">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="severity">Storm Severity (1 - 10)</label>
+                </div>
+                <div class="col-75">
+                    <input type="range" id="severity" name="severity" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> &nbsp; <span id="ratingvalue">5</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="storm_region">Storm Region</label>
+                </div>
+                <div class="col-75">
+                    <select name="storm_region" id="storm_region" onclick="disableSelect()">
+                        <option value="">Select Region</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="row">
+                
+                <div class="col-25">
+                       <label>User In Danger</label> 
+                        
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="userInDanger" name="userInDanger" value="yes"> <label for="userInDanger">Yes </label>
+                    <input type="radio" id="userInDanger2" name="userInDanger" value="Maybe"> <label for="userInDanger2">Maybe </label>
+                    <input type="radio" id="userInDanger3" name="userInDanger" value="No"> <label for="userInDanger3">No </label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="additional_info">Additonal Information</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="additional_info" id="additional_info" cols="40" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">&nbsp;</div>
+                <div class="col-75">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            
+            
+         </form>
+          
+     </div>
+    
+    <!-- articles below-->
+    
+</main><!--end of main -->
+   
+<footer>
+    <div class="footer-column">
+        <div class="footer-column1">
+            <h4>Contact</h4>
+            
+            <p class="small  left"> 
+                WebForecasts.com 
+                <br># 232 Main Building, Popular Street
+                <br>Angeles City, Pampanga, Philippines
+                <br>Tel: +63 45 320 2020
+            </p>
+            
+        </div>
+            
+        
+        <div class="footer-column2 left">
+                <!--<img src="images/world-map.PNG"  class="responsive-img" alt="world map">-->
+                <!--maps-->
+                <img src="images/location-map.PNG"  class="responsive-img" alt="location map">
+                
+        </div>   
+        <div class="footer-column1 ">
+                <h4>Follow Us</h4>
+                <p class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
+                </p>
+                
+        </div>
+    </div>
+    <div class="copyright small">
+        <span class="site-name1">Web</span><span class="site-name2">Forecasts.com</span> &copy; <span id="currentDate"> </span> | <a href="#">Terms</a>
+    </div>
+    <div class="clear"></div>
+</footer>
+
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+<script src="js/windchill.js"></script>
+<script src="js/sliderrating.js"></script>
+</body>
+</html>
