@@ -1,5 +1,4 @@
-
-
+var cityName=document.getElementById('cityName').innerHTML;
 var divFlex = document.querySelector('div.events');
 var requestURL="https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
@@ -10,7 +9,7 @@ var request = new XMLHttpRequest();
     request.onload = function() {
         var townData = request.response;
        for(var i=0; i < townData.towns.length; i++){
-         if(townData.towns[i].name==="Preston"){
+         if(townData.towns[i].name===cityName){
                 var myH3 = document.createElement('h3');//declare new h3
                 myH3.innerText="Events";// townData.towns[i].name; // assign a text in the h3 element
                 divFlex.appendChild(myH3);// add the element to the dom

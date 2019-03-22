@@ -16,8 +16,6 @@ switch(cityName){
         lon=-108.272346;
         lat=45.56551;
         break;
-
-
 }
 
 
