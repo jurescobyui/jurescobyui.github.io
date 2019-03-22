@@ -1,5 +1,28 @@
+var cityName=document.getElementById('cityName').innerHTML;
+var lon;
+var lat;
+console.log(cityName);
+
+switch(cityName){
+    case "Preston":
+        lon=-111.876617;
+        lat= 42.09631;
+        break;
+    case "Fish Haven":
+        lon=-111.253532;
+        lat=42.051601 ;
+        break;
+    case "Soda Springs":
+        lon=-108.272346;
+        lat=45.56551;
+        break;
+
+
+}
+
+
 let weatherRequest = new XMLHttpRequest();
-var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
+var apiURLstring = "https://api.openweathermap.org/data/2.5/weather?lon="+lon+"&lat="+lat+"&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
 
 //working api for openweather
 weatherRequest.open("GET",apiURLstring,true);
@@ -30,7 +53,7 @@ var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
 }
 
 let forecastRequest = new XMLHttpRequest();
-var xhrURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
+var xhrURL = "https://api.openweathermap.org/data/2.5/forecast?lon="+lon+"&lat="+lat+"&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559";
 //http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=8ec39d712acbcc119f2f75333221c559
 
 //working api for openweather

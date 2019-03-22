@@ -1,3 +1,5 @@
+
+
 var divFlex = document.querySelector('div.events');
 var requestURL="https://byui-cit230.github.io/weather/data/towndata.json";
 var request = new XMLHttpRequest();
@@ -15,7 +17,7 @@ var request = new XMLHttpRequest();
 
                 var myP1=document.createElement('p');// declare a new p element
                
-               // myP1.innerHTML=townData.towns[i].events[0];
+              
                var myUL=document.createElement('ul');
                
                 
@@ -28,15 +30,7 @@ var request = new XMLHttpRequest();
                myP1.appendChild(myUL);
                divFlex.appendChild(myP1);
               
-               // divFlex.appendChild(myP1);// create the new p
-
-                /*var myP2=document.createElement('p');// declare a new p element
-                myP2.innerHTML="<strong>Year Founded: </strong>" + townData.towns[i].yearFounded;
-                myP2.innerHTML+="<br><strong>Population: </strong>" + townData.towns[i].currentPopulation;
-                myP2.innerHTML+="<br><strong>Annual Rain Fall: </strong>" + townData.towns[i].averageRainfall;
-
-                divFlex.appendChild(myP2);// create the new p*/
-
+               
                 
                 console.log(i + " " + townData.towns[i].name);
         
