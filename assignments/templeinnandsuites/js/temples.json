@@ -1,0 +1,26 @@
+{
+    "name":"Manila Philippines Temple",
+    "address":"13 Temple Dr, Greenmeadows Subd, Quezon City, 1110 Metro Manila, Philippines",
+    "tel":"(63) 2-635-9111",
+    "services":[{
+        "clothing rental":"available",
+        "cafeteria":"not available",
+        "patron housing":"not available",
+        "distribution center":"nearby" 
+        }],
+    "schedule":[{
+        "baptism":"7:00AM - 9:00PM",
+        "initiatory":"8:00AM - 6:00PM",
+        "endowment":"9:30AM - 7:00PM"
+    }],
+    "closures":[{
+        "Monday, August 5, 2019 - Monday, August 19, 2019",
+        "Tuesday, December 24, 2019",
+        "Wednesday, December 25, 2019",
+        "Tuesday, December 31, 2019"
+        }],
+    "image":"https://assets.ldscdn.org/c9/1d/c91d001ec21c19397911b63f9365f184ec7907e4/manila_philippines_temple_lds.jpg"
+
+    
+
+}
