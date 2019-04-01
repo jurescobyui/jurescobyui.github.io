@@ -1,4 +1,4 @@
-{
+[{
     "name":"Manila Philippines Temple",
     "address":"13 Temple Dr, Greenmeadows Subd, Quezon City, 1110 Metro Manila, Philippines",
     "tel":"(63) 2-635-9111",
@@ -20,7 +20,81 @@
         "Tuesday, December 31, 2019"
         }],
     "image":"https://assets.ldscdn.org/c9/1d/c91d001ec21c19397911b63f9365f184ec7907e4/manila_philippines_temple_lds.jpg"
-
-    
-
+    "milestones":[{
+        "Announced":"1 April 1981",
+        "Groundbreaking":"25 August 1982",
+        "Dedicated":"25 September 1984" 
+    }]
+    },
+    {
+    "name":"Laie Hawaii Temple",
+    "address":"55-600 Naniloa Loop, Laie HI 96762-2202, United States",
+    "tel":"(1) 808-293-2427",
+    "services":[{
+        "clothing rental":"available",
+        "cafeteria":"not available",
+        "patron housing":"not available",
+        "distribution center":"nearby" 
+        }],
+    "schedule":[{
+        "baptism":"7:00 AM - 8:00 PM",
+        "initiatory":"7:00 AM - 8:00 PM",
+        "endowment":"9:30 AM - 7:00 PM",
+        "sealing":"7:00 AM - 8:00 PM"
+    }],
+    "closures":[{
+        "Friday, 5 April 2019 (Limited Hours)",
+        "Saturday, 6 April 2019",
+        "Friday, 28 June 2019 (Limited Hours)",
+        "Saturday, 29 June 2019 (Limited Hours)",
+        "Monday, 1 July 2019 - Monday, 15 July 2019",
+        "Friday, 4 October 2019 (Limited Hours)",
+        "Saturday, 5 October 2019",
+        "Wednesday, 27 November 2019 (Limited Hours)",
+        "Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Friday, 27 December 2019 (Limited Hours)",
+        "Saturday, 28 December 2019 (Limited Hours)",
+        "Monday, 30 December 2019 - Monday, 13 January 2020"
+        }],
+    "image":"https://assets.ldscdn.org/58/36/5836fd79f0f92e33bfe124e2f86ff43a382af1be/laie_hawaii_temple_lds.jpg",
+    "milestones":[{
+        "Announced":"3 October 1915",
+        "Groundbreaking":"8 February 1916",
+        "Dedicated":"27 November 1919",
+        "Rededicated":"21 November 2010"
+        }]
+},
+{
+    "name":"San Diego California Temple",
+    "address":"7474 Charmant Dr,San Diego, CA 92122-5000, United States",
+    "tel":"(1) 858-622-0991",
+    "services":[{
+        "clothing rental":"available",
+        "cafeteria":"not available",
+        "patron housing":"not available",
+        "distribution center":"nearby" 
+        }],
+    "schedule":[{
+        "baptism":"8:00 AM - 8:00 PM",
+        "initiatory":"8:00 AM - 8:30 PM",
+        "endowment":"5:30 AM - 7:30 PM",
+        "sealing":"8:00 AM - 8:30 PM"
+    }],
+    "closures":[{
+        "Monday, 18 March 2019 - Monday, 1 April 2019",
+        "Saturday, 6 April 2019",
+        "Thursday, 4 July 2019",
+        "Monday, 30 September 2019 - Monday, 11 November 2019",
+        "Wednesday, 27 November 2019 - Thursday, 28 November 2019",
+        "Tuesday, 24 December 2019 - Wednesday, 25 December 2019",
+        "Tuesday, 31 December 2019"
+        }],
+    "image":"https://assets.ldscdn.org/87/e3/87e3cb3402e9c02c6ec4ba95dddcc6412c91f607/san_diego_california_temple.jpeg",
+    "milestones":[{
+        "Announced":"7 April 1984",
+        "Groundbreaking":"27 February 1988",
+        "Dedicated":"25 April 1993"
+        }]
 }
+]
