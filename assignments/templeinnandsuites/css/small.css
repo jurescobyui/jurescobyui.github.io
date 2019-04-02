@@ -1,0 +1,15 @@
+/* mobile view */
+@media only screen and (min-width:360px) {
+
+body{
+    font-family: raleway, Helvetica, sans-serif;
+}
+
+/*social media icons*/
+.social{
+    float:right;
+}
+
+
+
+}/*end of small media query*/
