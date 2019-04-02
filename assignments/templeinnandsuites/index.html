@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home - Temple Inn And Suites</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -19,22 +19,37 @@
             <p><span><i class="far fa-envelope"></i> </span>info@templeinnandsuites.com 
                 Tel: 1-800-234-567 
                 <span class="social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                    <a href="#"><i class="fab fa-google-plus"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i> </a>
-                    <a href="#"> <i class="fab fa-pinterest-square"></i> </a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>      
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i> </a>
+                    <a href="https://pinterest.com"> <i class="fab fa-pinterest-square"></i> </a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>      
             </span> </p> 
         </div><!--end topbar-->
         <div id="brand">
-            <h4>Temple Inn and Suites</h4>
+            <h4 id="titleText">Temple Inn and Suites</h4>
             <p>Your home in every temple location</p>
         </div>
 
     </header>
     <nav>
-
+        <div class="topnav" id="topnav">
+            <a href="#" class="active">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn"> Temples <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button >
+                <div class="dropdown-content">
+                    <a href="#">San Diego California</a>
+                    <a href="#">Laei Hawaii</a>
+                    <a href="#">Rome Italy</a>
+                    <a href="#">Manila Philippines</a>
+                </div>                   
+            </div>
+            <a href="#">Book Now</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
     </nav>
     <main>
 
@@ -44,5 +59,15 @@
        <small> &copy; <span id="currentDate"> </span> Temple Inn and Suites | 4800 Montgomery Ln #300, Bethesda, MD 20814 </small>
     </footer>
     <script src="js/currentdate.js"></script>
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
 </body>
 </html>
