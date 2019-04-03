@@ -3,7 +3,12 @@
 
   
   /*2nd max-width 600*/
-  
+  #topbar{
+      display:block;
+  }
+  #topbar a{
+      color:#2E2E2E;
+  }
 
 
 

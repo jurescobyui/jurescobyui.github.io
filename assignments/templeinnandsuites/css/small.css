@@ -1,11 +1,15 @@
 /* mobile view */
-
+#topbar, #brand, .topnav, main, footer{
+    min-width:320px;
+}
 
 body{
     font-family: raleway, Helvetica, sans-serif;
+    color:#2E2E2E;
 }
 #topbar{
    margin-bottom:8px;
+   display:none;
 }
 /*social media icons*/
 .social{
@@ -20,6 +24,7 @@ body{
 }
 
 #brand{
+    margin-top:10px;
     text-align:center;
      line-height: 0.5;
 }
@@ -27,8 +32,12 @@ body{
 .topnav {
     overflow: hidden;
    /* background-color: #333;*/
+  
   }
   
+  .hidden{
+      display:none;
+  }
   .topnav a {
     float: left;
     display: block;
@@ -37,6 +46,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    
   }
   
   .active {
@@ -83,19 +93,22 @@ body{
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
+    background-color: #008EC6;
     color: white;
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #008EC6;
+    color: white;
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
   
+  .img-responsive{
+      width:100%;
+  }
   @media screen and (max-width: 600px) {
    
   }

@@ -1,7 +1,7 @@
 /* 64em is also 1028px when basefont is 16px */
 /*topbar */
 @media only screen and (min-width: 768px ) {
-    header div#topbar p, #brand{
+     #brand{
         max-width:1000px;
         margin: 0 auto;
       /*  border: thin solid cyan;*/
@@ -12,15 +12,14 @@
         font-family:playball;
         font-size:3em;
     }
+
+
+
 }/*end of min-width 768*/
 @media only screen and (max-width: 768px ) { /*max-width: 64em */
 
 /*topbar */
-header div#topbar p{
-    max-width:1000px;
-    margin: 0 auto;
-    border: thin solid cyan;
-}
+
  
 /* nav styles */
    .topnav a:not(:first-child), .dropdown .dropbtn {
