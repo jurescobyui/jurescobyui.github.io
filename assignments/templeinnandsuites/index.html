@@ -34,7 +34,9 @@
 
     </header>
     <nav>
-        <div class="topnav" id="topnav">
+       
+        
+             <div class="topnav" id="mytopnav">
             <a href="#" class="active">Home</a>
             <div class="dropdown">
                 <button class="dropbtn"> Temples <i class="fa fa-chevron-down" aria-hidden="true"></i>
@@ -50,6 +52,7 @@
             <a href="#">Contact</a>
             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        
     </nav>
     <main>
 
@@ -61,7 +64,7 @@
     <script src="js/currentdate.js"></script>
     <script>
             function myFunction() {
-              var x = document.getElementById("myTopnav");
+              var x = document.getElementById("mytopnav");
               if (x.className === "topnav") {
                 x.className += " responsive";
               } else {
