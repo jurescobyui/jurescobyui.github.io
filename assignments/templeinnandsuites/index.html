@@ -15,50 +15,58 @@
     
 </head>
 <body>
-    <header>
-        <div id="topbar">
-            <p><span><i class="far fa-envelope"></i> </span>info@templeinnandsuites.com 
-                <i class="fas fa-phone-square"></i> Tel: 1-800-234-567 
-                <span class="social">
-                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
-                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
-                    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i> </a>
-                    <a href="https://pinterest.com"> <i class="fab fa-pinterest-square"></i> </a>
-                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>      
-            </span> </p> 
-        </div><!--end topbar-->
-        <div id="brand">
-            <h4 id="titleText">Temple Inn and Suites</h4>
-            <p>Your home in every temple location</p>
-        </div>
+    <div class="fixedHeader">   
+            <header>
+                <div id="topbar">
+                    <p><span><i class="far fa-envelope"></i> </span>info@templeinnandsuites.com 
+                        <i class="fas fa-phone-square"></i> Tel: 1-800-234-567 
+                        <span class="social">
+                            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                            <a href="https://plus.google.com"><i class="fab fa-google-plus"></i></a>
+                            <a href="https://linkedin.com"><i class="fab fa-linkedin"></i> </a>
+                            <a href="https://pinterest.com"> <i class="fab fa-pinterest-square"></i> </a>
+                            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>      
+                    </span> </p> 
+                </div><!--end topbar-->
+                <div id="brand">
+                    <h4 id="titleText">Temple Inn and Suites</h4>
+                    <p>Your home in every temple location</p>
+                </div>
 
-    </header>
-    <nav>
-       
-        
-             <div class="topnav" id="mytopnav">
-            <a href="#" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
-            <div class="dropdown">
-                <button class="dropbtn" onclick="hideme()"><i class="fas fa-place-of-worship"></i> Temples <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                </button >
-                <div class="dropdown-content" id="drpdown-content">
-                    <a href="#">San Diego California</a>
-                    <a href="#">Laei Hawaii</a>
-                    <a href="#">Rome Italy</a>
-                    <a href="#">Manila Philippines</a>
-                </div>                   
+            </header>
+            <nav>
+            
+                
+                    <div class="topnav" id="mytopnav">
+                <a href="#" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="hideme()"><i class="fas fa-place-of-worship"></i> Temples <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button >
+                    <div class="dropdown-content" id="drpdown-content">
+                        <a href="#">San Diego California</a>
+                        <a href="#">Laei Hawaii</a>
+                        <a href="#">Rome Italy</a>
+                        <a href="#">Manila Philippines</a>
+                    </div>                   
+                </div>
+                <a href="#"><i class="fas fa-wallet"></i> Book Now</a>
+                <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <a href="#"><i class="fas fa-wallet"></i> Book Now</a>
-            <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+            
+        </nav>
+        </div><!--end of fixedHeader-->
         
-    </nav>
     <main>
+        
         <div class="slider">
             <img src="img/slider/hubert-mousseigne-661236-unsplash-1000.jpg"  class="img-responsive" alt="hero image">
+            <div class="overlay">
+             <button class="btn">Book now!</button>
+            </div>
         </div>
+        
     </main>
     <footer>
 

@@ -7,6 +7,14 @@ body{
     font-family: raleway, Helvetica, sans-serif;
     color:#2E2E2E;
 }
+
+
+.clearfix{
+    clear:both;
+}
+main{
+    /*margin-top:250px;*/
+}
 #topbar{
    margin-bottom:8px;
    display:none;
@@ -31,6 +39,7 @@ body{
 
 .topnav {
     overflow: hidden;
+    
    /* background-color: #333;*/
   
   }
@@ -120,4 +129,24 @@ body{
 #topbar{
     background-color:#243C4F;
     color:white;
+}
+
+.slider{
+    position:relative;
+}
+/* overlay*/
+.overlay{
+    height:25%;
+    width:100%;
+    margin:0 auto;
+    border:thin solid cyan;
+    position:absolute;
+   bottom:0px;
+   
+    
+}
+.btn {
+   position: absolute;
+   right:45%;
+   bottom:2%;
 }

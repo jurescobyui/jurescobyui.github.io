@@ -16,7 +16,16 @@
   #brand{
       margin-top:15px;
   }
-
+  .fixedHeader{
+      background-color: white;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 900;
+}
+main{
+    margin-top:180px;
+}
 }/*end of min-width 768*/
 @media only screen and (max-width: 768px ) { /*max-width: 64em */
 
