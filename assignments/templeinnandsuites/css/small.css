@@ -136,7 +136,7 @@ main{
 }
 /* overlay*/
 .overlay{
-    height:25%;
+    height:10%;
     width:100%;
     margin:0 auto;
     border:thin solid cyan;
@@ -148,5 +148,7 @@ main{
 .btn {
    position: absolute;
    right:45%;
-   bottom:2%;
+   bottom:10%;
+   border-radius: 15px;
+   padding:12px;
 }

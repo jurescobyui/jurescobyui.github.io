@@ -61,7 +61,13 @@
     <main>
         
         <div class="slider">
-            <img src="img/slider/hubert-mousseigne-661236-unsplash-1000.jpg"  class="img-responsive" alt="hero image">
+        <img srcset="img\slider\hubert-mousseigne-661236-unsplash-350.jpg 360w,
+                img\slider\hubert-mousseigne-661236-unsplash-550.jpg 560w,
+                img\slider\hubert-mousseigne-661236-unsplash-1000.jpg 768w"
+        sizes="(max-width: 420px) 360px,
+                (max-width: 560px) 421px,
+                (max-width: 768px) 561px"
+        src="img/slider/hubert-mousseigne-661236-unsplash-1000.jpg"  class="img-responsive" alt="Hotel Front View">
             <div class="overlay">
              <button class="btn">Book now!</button>
             </div>
