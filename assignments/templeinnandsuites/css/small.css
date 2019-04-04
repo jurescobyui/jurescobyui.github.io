@@ -109,6 +109,15 @@ body{
   .img-responsive{
       width:100%;
   }
-  @media screen and (max-width: 600px) {
-   
-  }
+ 
+
+  footer{
+    background-color:#243C4F;
+    text-align:center;
+    color:white;
+    padding:15px;
+}
+#topbar{
+    background-color:#243C4F;
+    color:white;
+}
