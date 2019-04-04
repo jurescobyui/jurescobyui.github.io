@@ -13,6 +13,13 @@
      color:white;
   }
 
+  .grid-container{
+   
+    grid-template-columns: auto  auto;
+   
+}
 
-
+.small-contact{
+    display:none;
+}
 }/*end of media query*/
