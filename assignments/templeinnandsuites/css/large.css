@@ -17,7 +17,7 @@
       margin-top:15px;
   }
   .fixedHeader{
-      background-color: white;
+      background-color: #EFF3F5;
     width:100%;
     /*position:fixed;
     top:0;
@@ -29,7 +29,8 @@ main{
 /*article contents grid*/
 .grid-container{
     
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    
    
 }
 

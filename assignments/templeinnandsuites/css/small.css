@@ -6,6 +6,7 @@
 body{
     font-family: raleway, Helvetica, sans-serif;
     color:#2E2E2E;
+    background-color:#EFF3F5;
 }
 
 
@@ -107,7 +108,7 @@ main{
   }
   
   .dropdown-content a:hover {
-    background-color: #008EC6;
+    background-color: #243C4F;
     color: white;
   }
   
@@ -163,8 +164,10 @@ h1{
 }
 .grid-container >div{
     width:100%;
-   
+    text-align:center;
     
-    border:thin solid pink;
+   /* border:thin solid pink;*/
 }
-    
+.grid-container p{
+    padding:5px;
+}

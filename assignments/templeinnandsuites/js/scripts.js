@@ -17,4 +17,9 @@ function hideme(){
     }
 }
 
+function gotoLink(){
+    alert("go to another link!");
+    location.replace("https://jurescobyui.github.io");
+}
+
         
