@@ -191,13 +191,18 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
- color: #f2f2f2;
+ /*color: #f2f2f2;*/
+ color:white;
+ 
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 50px;
-  width: 100%;
+  bottom: 36px;
+  width: 98%;
   text-align: center;
+  
+  background-color:#2e2e2e;
+  opacity:0.6;
 }
 
 /* Number text (1/3 etc) */
@@ -220,8 +225,10 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
-  background-color: #717171;
+
+.active{
+  /*background-color: #717171;*/
+  background-color: #00ADF1;
 }
 
 /* Fading animation */
@@ -242,7 +249,44 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+/***** call to action button css**********/
+.cta-btn {
+  position: absolute;
+  top:10px;
+  right:10px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 4px 2px 1px #666666;
+  -webkit-box-shadow: 2px 5px 7px #666666;
+  -moz-box-shadow: 2px 5px 7px #666666;
+  box-shadow: 2px 5px 7px #666666;
+  color: #ffffff;
+  font-size: 26px;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  
+
+}
+
+.cta-btn:hover {
+  background: #00ADF1;
+  background-image: -webkit-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -moz-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -ms-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: -o-linear-gradient(top, #00ADF1, #2B475E);
+  background-image: linear-gradient(to bottom, #00ADF1, #2B475E);
+  text-decoration: none;
+}
+/*******end cta button****/
+
+
+
+
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
   /*********** end of slider css *************/
+  
