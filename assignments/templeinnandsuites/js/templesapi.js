@@ -38,14 +38,15 @@ for(i=0;i<templeData.length;i++){
         document.getElementById('templeAddress').innerHTML=templeData[i].address;
         document.getElementById('tel').innerHTML=templeData[i].tel;
         for(j=0;j<templeData[i].services.length; j++){
-            console.log(templeData[i].services[j]);
+            console.log(templeData[i].services[j]); 
+            txtServices += templeData[i].services[j] +"\n";
         }
         //document.getElementById('clothingRental').innerHTML=templeData[i].services[0].clothingRental;
         
-           // txtServices += templeData[i].services[j] +"\n";
+       
           // console.log(templeData[i].services[i].clothingRental);
         
-       // document.getElementById('templeServices').innerHTML=txtServices;
+        document.getElementById('templeServices').innerHTML=txtServices;
        
        /* console.log(templeData[i].address);
         console.log(templeData[i].tel);
