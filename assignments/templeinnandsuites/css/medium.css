@@ -54,4 +54,9 @@ ul.breadcrumb li {
     width: 75%;
    
   }
+
+  #googleMap{
+    width:65%;
+    margin:0 auto;
+  }
 }/*end of media query*/
