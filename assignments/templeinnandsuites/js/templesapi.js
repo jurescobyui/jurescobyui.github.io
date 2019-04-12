@@ -21,32 +21,34 @@ switch(templeName){
 //get temple data from json file
 let templeRequest = new XMLHttpRequest();
 let xhrURLString = "https://jurescobyui.github.io/assignments/templeinnandsuites/js/temples.json";
+
 templeRequest.open("GET", xhrURLString,true);
 //templeData.responseType='json';
 templeRequest.send();
 templeRequest.onload=function(){
 let templeData = JSON.parse(templeRequest.responseText);
 
-console.log(templeData);
-console.log(templeData.length);
+//console.log(templeData);
+//console.log(templeData.length);
 var txtServices=" ";
 for(i=0;i<templeData.length;i++){
-    console.log(templeData[i].name);
+    //console.log(templeData[i].name);
     if(templeData[i].name===templeName){
         document.getElementById('templeImage').src=templeData[i].image;
         document.getElementById('templeAddress').innerHTML=templeData[i].address;
         document.getElementById('tel').innerHTML=templeData[i].tel;
-        for(j=0;j<templeData[i].services.length;j++){
+        document.getElementById('clothingRental').innerHTML=templeData[i].services[0].clothingRental;
+        
            // txtServices += templeData[i].services[j] +"\n";
-           console.log(templeData[i].services[j]);
-        }
+           console.log(templeData[i].services[i].clothingRental);
+        
        // document.getElementById('templeServices').innerHTML=txtServices;
        
-        console.log(templeData[i].address);
+       /* console.log(templeData[i].address);
         console.log(templeData[i].tel);
         console.log(templeData[i].services);
         console.log(templeData[i].closures);
-        console.log(templeData[i].milestones);
+        console.log(templeData[i].milestones);*/
         
     }
 }
