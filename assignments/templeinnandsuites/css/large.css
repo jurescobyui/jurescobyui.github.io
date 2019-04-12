@@ -22,25 +22,13 @@
     /*position:fixed;
     top:0;
     z-index: 900;*/
-}
-main{
-   /* margin-top:180px;*/
-}
-/*article contents grid*/
-.grid-container{
+
+  }
+  /*article contents grid*/
+  .grid-container{  
+    grid-template-columns:32% 32% 32%;
     
-    grid-template-columns: 25% 25% 25% 25%;
-    
-   
-}
-
-
-
-
-
-
-
-
+  }
 
 
 

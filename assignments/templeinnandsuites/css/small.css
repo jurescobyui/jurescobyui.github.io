@@ -183,7 +183,13 @@ ul.breadcrumb li a:hover {
 }
 h1,h2,h3,h4{
     text-align:center;
+    font-size:0.8em;
 }
+h1{
+  font-size:1em;
+}
+
+
 .grid-container{
     display:grid;
     grid-template-columns: auto ;

@@ -31,27 +31,34 @@ let templeData = JSON.parse(templeRequest.responseText);
 //console.log(templeData);
 //console.log(templeData.length);
 var txtServices=" ";
+var txtClosures=" ";
+var txtMilestones=" ";
 for(i=0;i<templeData.length;i++){
-    //console.log(templeData[i].name);
+   
     if(templeData[i].name===templeName){
         document.getElementById('templeImage').src=templeData[i].image;
         document.getElementById('templeAddress').innerHTML=templeData[i].address;
         document.getElementById('tel').innerHTML=templeData[i].tel;
         for(j=0;j<templeData[i].services.length; j++){
             console.log(templeData[i].services[j]); 
-            txtServices += templeData[i].services[j] +"\n";
+            txtServices += templeData[i].services[j] +"&nbsp;<br> \r\n";
         }
-        //document.getElementById('clothingRental').innerHTML=templeData[i].services[0].clothingRental;
-        
-       
-          // console.log(templeData[i].services[i].clothingRental);
-        
         document.getElementById('templeServices').innerHTML=txtServices;
+       for(k=0;k<templeData[i].closures.length;k++){
+            txtClosures += templeData[i].closures[k] + "\n";
+       }
+       document.getElementById('closures').innerHTML=txtClosures;
+       document.getElementById('baptism').innerHTML="Baptism :" + templeData[i].schedule[0].baptism;
+       document.getElementById('initiatory').innerHTML="Initiatory :" + templeData[i].schedule[0].initiatory;
+       document.getElementById('endowment').innerHTML="Endowment :" + templeData[i].schedule[0].endowment;
+       document.getElementById('sealing').innerHTML="Sealing :" + templeData[i].schedule[0].sealing;
+        
+       for(l=0;l<templeData[i].milestones.length;l++){
+          txtMilestones += templeData[i].milestones[l] + "<br>";
+       }
+       document.getElementById('milestones').innerHTML=txtMilestones;
        
-       /* console.log(templeData[i].address);
-        console.log(templeData[i].tel);
-        console.log(templeData[i].services);
-        console.log(templeData[i].closures);
+       /*      
         console.log(templeData[i].milestones);*/
         
     }
