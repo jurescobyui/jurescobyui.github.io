@@ -42,4 +42,16 @@ ul.breadcrumb li {
     margin: 0 auto;
   }
   
+  .col-25 {
+    float: left;
+    width: 25%;
+   
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+   
+    width: 75%;
+   
+  }
 }/*end of media query*/
