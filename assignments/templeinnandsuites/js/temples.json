@@ -3,10 +3,10 @@
     "address":"13 Temple Dr, Greenmeadows Subd, Quezon City, 1110 Metro Manila, Philippines",
     "tel":"(63) 2-635-9111",
     "services":[{
-        "clothing rental":"available",
+        "clothingRental":"available",
         "cafeteria":"not available",
-        "patron housing":"not available",
-        "distribution center":"nearby" 
+        "patronHousing":"not available",
+        "distributionCenter":"nearby" 
         }],
     "schedule":[{
         "baptism":"7:00AM - 9:00PM",
@@ -26,10 +26,10 @@
     "address":"55-600 Naniloa Loop, Laie HI 96762-2202, United States",
     "tel":"(1) 808-293-2427",
     "services":[{
-        "clothing rental":"available",
+        "clothingRental":"available",
         "cafeteria":"not available",
-        "patron housing":"not available",
-        "distribution center":"nearby" 
+        "patronHousing":"not available",
+        "distributionCenter":"nearby" 
         }],
     "schedule":[{
         "baptism":"7:00 AM - 8:00 PM",
@@ -65,10 +65,10 @@
     "address":"7474 Charmant Dr,San Diego, CA 92122-5000, United States",
     "tel":"(1) 858-622-0991",
     "services":[{
-        "clothing rental":"available",
+        "clothingRental":"available",
         "cafeteria":"not available",
-        "patron housing":"not available",
-        "distribution center":"nearby" 
+        "patronHousing":"not available",
+        "distributionCenter":"nearby" 
         }],
     "schedule":[{
         "baptism":"8:00 AM - 8:00 PM",
@@ -97,10 +97,10 @@
     "address":"Via di Settebagni 376, Rome RM, Italy",
     "tel":"(39) 06-9480-5050",
     "services":[{
-        "clothing rental":"available",
+        "clothingRental":"available",
         "cafeteria":"not available",
-        "patron housing":"available",
-        "distribution center":"nearby" 
+        "patronHousing":"available",
+        "distributionCenter":"nearby" 
         }],
     "schedule":[{
         "baptism":"4:30 PM - 7:30 PM",
