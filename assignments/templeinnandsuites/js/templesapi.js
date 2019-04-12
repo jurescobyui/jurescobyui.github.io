@@ -4,17 +4,20 @@ var lat;
 
 switch(templeName){
     case "San Diego California Temple":
-    
         lon=-117.2742;
         lat= 32.847271;
         break;
-    case "Laei Hawaii":
-        lon=-111.253532;
-        lat=42.051601 ;
+    case "Laie Hawaii Temple":
+        lon=-156.500275;
+        lat=20.75028;
         break;
-    case "Soda Springs":
-        lon=-108.272346;
-        lat=45.56551;
+    case "Rome Italy Temple":
+        lon=12.62194;
+        lat=42.001671;
+        break;
+    case "Manila Philippines Temple":
+        lon=121.033333;
+        lat=14.63333;
         break;
 }
 
@@ -83,7 +86,7 @@ let weatherData = JSON.parse(weatherRequest.responseText);
 console.log(weatherData);
     //get current temp from json array assign to var curTemp
 var curTemp = weatherData.main.temp_max;
-var description = weatherData.weather[0].description;
+var description = weatherData.weather[0].main;
 var windChill = weatherData.wind.deg;
 var humidity = weatherData.main.humidity;
 var windSpeed = weatherData.wind.speed;
@@ -93,8 +96,8 @@ var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
    document.getElementById('wicon').src=iconurl;
    document.getElementById('current-temp').innerHTML=curTemp;
    document.getElementById('description').innerHTML=description;
-   document.getElementById('currentConditions').innerHTML=description;
-   document.getElementById('windChillOutput').innerHTML=windChill;
+   //document.getElementById('currentConditions').innerHTML=description;
+  // document.getElementById('windChillOutput').innerHTML=windChill;
    document.getElementById('humidity').innerHTML=humidity;
    document.getElementById('windSpeed').innerHTML=windSpeed;
 }
