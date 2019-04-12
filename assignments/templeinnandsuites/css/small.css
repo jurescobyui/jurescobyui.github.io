@@ -422,6 +422,17 @@ input[type=text], select, textarea, input[type=email],input[type=tel],input[type
 #googleMap{
   width:100%;
 }
+
+.success {
+  width:100%;
+  height:50px;
+
+  margin-bottom: 15px;
+  padding:15px;
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+  text-align:center;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}

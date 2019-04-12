@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Inn, suites, accomodations, and function halls very close to temples">
-    <title>Rome Italy - Temple Inn And Suites</title>
+    <title>Book Now - Temple Inn And Suites</title>
     <link href="https://fonts.googleapis.com/css?family=Playball|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
@@ -44,7 +44,7 @@
                         <div class="dropdown-content" id="drpdown-content">
                             <a href="san-diego-california.html" >San Diego California</a>
                             <a href="laei.html">Laei Hawaii</a>
-                            <a href="rome.html" class="active">Rome Italy</a>
+                            <a href="rome.html" >Rome Italy</a>
                             <a href="manila.html"  >Manila Philippines</a>
                         </div>                   
                     </div>
@@ -58,8 +58,8 @@
                             </div>                   
                     </div>
                     
-                    <a href="book-now.html"><i class="fas fa-wallet"></i> Book Now</a>
-                    <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                    <a href="book-now.html" class="active"><i class="fas fa-wallet"></i> Book Now</a>
+                    <a href="contact.html" ><i class="fa fa-fw fa-envelope"></i>Contact</a>
                     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
                 </div>
             
@@ -69,78 +69,83 @@
     <main>
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Temples</a></li>
-            <li>Rome Italy Temple</li>
+            <li>Book Now</li>
         </ul>
-    
-        <div class="slideshow-container">
-            <img id="templeImage" src="img/dot.jpg" class="img-responsive" alt="san diego temple picture">
-            
-        </div><!--end of slideshow container-->
-        <h1 id="templeName">Rome Italy Temple</h1>
-        <div class="grid-container">
-            <div > 
-                <h3>Address</h3>
-                <p id="templeAddress"></p>
-            </div>
-            <div>
-                <h3>Telephone</h3>
-                <p id="tel">1 343 123 1234</p>
-            </div>
-            <div>
-                <h3>Services</h3>
-                <p id="templeServices">
+    <h1>Booking Form</h1>
+        <div class="form_container">
+         
+                <form action="thank-you.html" method="get">
+                   <p>Fill in the Required Infomation</p> 
+                   <div class="row">
+                       <div class="col-25">
+                           <label  class="form_left" for="full_name">Fullname <span class="required">*</span></label>
+                       </div>
+                       <div class="col-75">
+                           <input class="form_right" type="text" id="full_name" name="full_name" minlength="5" pattern="^[A-Za-z ]+$" required autofocus > 
+                       </div>     
+                   </div>
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="email">Email <span class="required">*</span></label>
+                       </div>
+                       <div class="col-75">
+                           <input type="email" id="email" name="email" placeholder="myemail@domain" recquired>
+                       </div>
+                   </div>            
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="tel">Telephone </label>
+                       </div>
+                       <div class="col-75">
+                           <input type="tel" id="tel" name="tel">
+                       </div>
+                   </div>
+                   <div class="row">
+                        <div class="col-25">
+                            <label for="persons">Number of Persons <span class="required">*</span></label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="persons" name="persons" required >
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="col-25">
+                            <label for="checkin_date">Check in Date</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="checkin_date" name="checkin_date" >
+                        </div>
+                    </div><div class="row">
+                            <div class="col-25">
+                                <label for="checkout_date">Check Out Date</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="checkout_date" name="checkout_date" >
+                            </div>
+                        </div>
 
-                </p>
-            </div>
-            <div>
-                <h3>Schedule</h3>
-                <p id="baptism"></p>
-                <p id="initiatory"></p>
-                <p id="endowment"></p>
-                <p id="sealing"></p>
-            </div>
-            <div>
-                <h3>Closures</h3>
-                <p id="closures"></p>
-            </div>
-            <div> 
-                <h3>Milestones</h3>
-                <p id="milestones"></p>
+                   
+                   <div class="row">
+                       <div class="col-25">
+                           <label for="additional_info">Special Instructions</label>
+                       </div>
+                       <div class="col-75">
+                           <textarea name="additional_info" id="additional_info" cols="40" rows="3"></textarea>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-25">&nbsp;</div>
+                       <div class="col-75">
+                           <button type="submit">Submit</button>
+                       </div>
+                   </div>
+                   
+                   
+                </form>
+                 
             </div>
 
-        </div>
-        <h2>Current Weather</h2>
-       <div class="table-responsive">
-            <table>
-                <tr>
-                    <td><img  id="wicon" src="img/dot.jpg" alt="current weather image"> </td> 
-                    <td><span id="description"></span> </td>
-                </tr>
-                <tr>
-                        <td>Current Temp</td>
-                        <td><span id="current-temp"></span>&deg;F</td>
-                    </tr>
-                    <tr>
-                        <td>Humidity</td>
-                        <td><span id="humidity"></span>%</td>
-                    </tr>
-                    <tr>
-                        <td>Windspeed</td>
-                        <td> <span id="windSpeed"> </span> mph</td>
-                    </tr>
-                    <tr>
-                        <td>Windchill</td>
-                        <td> <span id="windChillOutput"></span></td>
-                    </tr>
-            </table>
-        </div>
             
-        <br>
-        
-        <span id="currentConditions"></span>
-       
-        
        
     </main>
     <footer>
@@ -152,12 +157,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/scripts.js"></script>
-   
-    <script src="js/templesapi.js"></script>
-    <script src="js/winchill.js"></script>
-    
-    
-    
+
            
 </body>
 </html>
