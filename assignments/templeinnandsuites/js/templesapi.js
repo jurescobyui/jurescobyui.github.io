@@ -91,7 +91,7 @@ var windChill = weatherData.wind.deg;
 var humidity = weatherData.main.humidity;
 var windSpeed = weatherData.wind.speed;
 var iconcode=weatherData.weather[0].icon;
-var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
     //output the current temp in the html
    document.getElementById('wicon').src=iconurl;
    document.getElementById('current-temp').innerHTML=curTemp;
