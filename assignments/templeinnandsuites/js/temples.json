@@ -3,10 +3,10 @@
     "address":"13 Temple Dr, Greenmeadows Subd, Quezon City, 1110 Metro Manila, Philippines",
     "tel":"(63) 2-635-9111",
     "services":[
-        "clothingRental":"available",
-        "cafeteria":"not available",
-        "patronHousing":"not available",
-        "distributionCenter":"nearby" 
+        "Clothing Rental : available",
+        "Cafeteria : not available",
+        "Patron Housing : not available",
+        "Distribution Center: nearby" 
         ],
     "schedule":[{
         "baptism":"7:00AM - 9:00PM",

@@ -37,10 +37,13 @@ for(i=0;i<templeData.length;i++){
         document.getElementById('templeImage').src=templeData[i].image;
         document.getElementById('templeAddress').innerHTML=templeData[i].address;
         document.getElementById('tel').innerHTML=templeData[i].tel;
-        document.getElementById('clothingRental').innerHTML=templeData[i].services[0].clothingRental;
+        for(j=0;j<templeData[i].services.length; j++){
+            console.log(templeData[i].services[j]);
+        }
+        //document.getElementById('clothingRental').innerHTML=templeData[i].services[0].clothingRental;
         
            // txtServices += templeData[i].services[j] +"\n";
-           console.log(templeData[i].services[i].clothingRental);
+          // console.log(templeData[i].services[i].clothingRental);
         
        // document.getElementById('templeServices').innerHTML=txtServices;
        
